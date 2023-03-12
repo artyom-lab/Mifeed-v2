@@ -99,6 +99,8 @@ a
 		color: $color-white
 		box-shadow: none
 
+.fz-0
+	font-size: 0
 .fz-9
 	font-size: 9px
 .fz-11
@@ -391,55 +393,41 @@ a
 		top: 0
 		margin-top: 0
 		transition: top .5s
-		.header-nav
-			display: none
 		.nav-links
 			box-shadow: 0 1px 2px rgba(0, 0, 0, .15)	
-			.navbar-brand
-				display: inline-block !important
 
 .mt-190 
 	margin-top: 50px
 	@media (max-width: 1199.98px)
 		margin-top: 185px
-	@media (max-width: 991.98px)
-		margin-top: 240px
 	@media (max-width: 767.98px)
-		margin-top: 266px
-	@media (max-width: 575.98px)
-		margin-top: 340px
+		margin-top: 160px
 
 .header-nav
 	transition: $transition
-	background: $color-gray !important
-	padding: 18px 16px
+	background: $color-white !important
+	padding: 14px 16px
 	@media (max-width: 575.98px)
-		padding: 18px 0
+		padding: 14px 0
 	.navbar-brand
 		padding: 0
 		text-align: center
 		margin-right: 0
 		img 
-			width: 170px
-			@media (max-width: 767.98px)
-				width: 140px
-		.text 
-			color: $color-black
-			font-size: 18px
-			margin-top: 8px
-			@media (max-width: 767.98px)
-				font-size: 14px
+			width: 150px
+			@media (max-width: 575.98px)
+				width: 100px
 
 .form-search-navbar
 	.form-control
-		height: 42px
-		border: 0
+		height: 46px
+		border: 1px solid $color-gray
 		border-radius: 6px
-		box-shadow: 0 1px 2px rgba(0, 0, 0, .15)	
 		font-size: 16px
-		padding: 6px 18px 6px 50px
+		padding: 6px 40px 6px 18px
 		min-width: 300px
-		color: $color-input
+		color: $color-black
+		box-shadow: none
 		@media (max-width: 991.98px)
 			min-width: auto
 			width: 100%
@@ -454,116 +442,106 @@ a
 		position: absolute
 		background: none
 		border: none
-		color: $color-input
+		color: $color-black
 		top: 50%
 		transform: translateY(-50%)
-		left: 16px
+		right: 12px
 		padding: 0
 		font-size: 18px
-	&.search-aside
-		.form-control
-			box-shadow: 0 1px 2px rgba(0, 0, 0, .35)	
-			background: $color-bg
-			color: $color-black
-			&::-webkit-input-placeholder
-				color: $color-black
-			&::-moz-placeholder
-				color: $color-black
-			&:-ms-input-placeholder
-				color: $color-black
-		.fa-magnifying-glass
-			color: $color-black
 	&.search-black
 		.form-control
+			border: 0
+			height: 42px
+			box-shadow: 0 1px 2px rgba(0, 0, 0, .15)	
 			padding: 6px 18px 6px 40px
 		.fa-magnifying-glass
-			color: $color-black
+			left: 12px
+			right: auto
 
 .select-state
 	font-size: 16px
 	border: 0	
 	cursor: pointer
 	min-width: 300px
-	height: 42px
-	padding: 6px 28px 6px 20px
+	border-radius: 8px
 	color: $color-input
+	height: 44px
+	font-weight: bold
+	padding: 6px 28px 6px 20px
 	box-shadow: 0 1px 2px rgba(0, 0, 0, .15)
 	background: $color-white url(../img/arrow-select.png) no-repeat right 0.75rem center/12px 8px
 	@media (max-width: 991.98px)
 		min-width: auto
 		width: 100%
+	@media (max-width: 575.98px)
+		padding: 6px 28px 6px 10px
 	&:focus 
 		box-shadow: 0 1px 2px rgba(0, 0, 0, .15)
-	&.select-aside
-		background: $color-bg url(../img/arrow-select.png) no-repeat right 0.75rem center/12px 8px
-		color: $color-black
-		box-shadow: 0 1px 2px rgba(0, 0, 0, .35)
 	&.select-gray
 		min-width: auto
 		width: 100%
-		font-weight: bold
 
 .nav-links
-	padding: 4px 0
+	padding: 14px 16px
 	background: $color-gray !important
+	position: relative
 	z-index: 1002
-	.navbar-brand
+	@media (max-width: 575.98px)
 		padding: 8px 0
-		font-size: 0
-		display: none
-		margin-bottom: 2px
-		@media (max-width: 991.98px)
-			margin-right: 8px
-		@media (max-width: 767.98px)
-			margin-right: 8px
-			margin-bottom: 4px
-		img 
-			width: 100px
-			@media (max-width: 767.98px)
-				width: 80px
-	.nav-link
-		color: $color-black !important
-		padding: 4px 10px !important
-		font-size: 16px
-		@media (max-width: 767.98px)
-			font-size: 14px
-		&.more
-			font-size: 18px !important
-		&.events
-			position: relative
-			&:after
-				content: ""
-				position: absolute
-				right: 0
-				top: 50% 
-				transform: translateY(-50%)
-				width: 1px
-				height: 22px
-				background: $color-input
 
-.menubar
+.btn-locations
+	position: relative
+	font-size: 16px
+	border: 0
+	display: block
+	border-radius: 8px
+	color: $color-blue
+	background: $color-white
+	font-weight: bold
+	padding: 10px 28px 10px 10px
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .15)
+	@media (max-width: 575.98px)
+		font-size: 14px
+	.fa-chevron-down
+		position: absolute
+		right: 12px
+		top: 50%
+		transition: $transition
+		color: $color-black	
+		font-size: 14px
+		transform: translateY(-50%)
+	&:hover
+		background: $color-blue
+		opacity: 1
+		color: $color-white
+		.fa-chevron-down
+			color: $color-white
+
+.btn-aside-map
+	display: block
+	background: $color-blue
+	border-radius: 8px
+	padding: 10px 20px
+
+.menubar-map, .menubar-locations, .menubar-allnews
 	overflow: hidden
 
-#menu 
-	position: fixed
-	top: 0
-	right: 0
-	bottom: 0
-	left: 0
-	overflow: auto
-	z-index: 1031
-	padding: 26px 0
-	transition: .5s
-	opacity: 0
-	background: $color-white
-	pointer-events: none
-	transform: scale(0)
+.menu-aside
+	@media (max-width: 1199.98px)
+		position: fixed
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		overflow: auto
+		z-index: 1031
+		transition: .5s
+		opacity: 0
+		background: $color-white
+		pointer-events: none
+		transform: scale(0)
 	@media (min-width: 1200px)
 		display: none
-	.menubar &
-		opacity: 1
-		pointer-events: auto
-		transform: scale(1)
 	.navbar-brand
 		padding: 0
 		text-align: center
@@ -572,21 +550,91 @@ a
 			width: 170px
 			@media (max-width: 767.98px)
 				width: 140px
+	.aside-bottom
+		min-height: calc(100vh - 62px)
+		.heatmap
+			height: calc(100vh - 62px)
 
-.block-links
-	div 
-		margin-bottom: 8px
-		a 
-			color: $color-black
+.menu-allnews
+	display: block !important
+	.aside-top
+		@media (min-width: 1200px)
+			display: none !important
+	.aside-bottom
+		margin: 0 auto
+		@media (max-width: 1199.98px)
+			max-width: calc(50% - 40px)
+		@media (max-width: 767.98px)
+			max-width: calc(70% - 40px)
+		@media (max-width: 575.98px)
+			max-width: calc(100% - 40px)
+
+.aside-top
+	background: $color-white
+	border-bottom: 1px solid $color-gray
+	padding: 14px 16px
+	@media (max-width: 575.98px)
+		padding: 17px 0
+	.navbar-brand
+		font-size: 0
+		img 
+			width: 150px
+			@media (max-width: 575.98px)
+				width: 100px
+	.aside-title
+		font-weight: bold
+		font-size: 22px
+		text-align: center
+		@media (max-width: 575.98px)
 			font-size: 18px
-			@media (max-width: 767.98px)
-				font-size: 16px
-			&:hover
-				color: $color-black
 
-.btn-close-aside
+.aside-map-close, .aside-locations-close, .aside-allnews-close
+	img 
+		width: 25px
+		@media (max-width: 575.98px)
+			width: 20px
+
+#menu-aside-map
+	.menubar-map &
+		opacity: 1
+		pointer-events: auto
+		transform: scale(1)
+
+#menu-aside-locations 
+	.menubar-locations &
+		opacity: 1
+		pointer-events: auto
+		transform: scale(1)
+
+#menu-aside-allnews 
+	.menubar-allnews &
+		opacity: 1
+		pointer-events: auto
+		transform: scale(1)
+
+.btn-apply-box
 	position: absolute
-	right: 15px
+	left: 20px
+	bottom: 20px
+	right: 20px
+	text-align: center
+	.btn-apply
+		font-size: 13px
+		transition: $transition
+		color: $color-white
+		border-radius: 8px
+		background: $color-blue
+		padding: 15px 50px
+		cursor: pointer
+		display: inline-block
+		@media (max-width: 575.98px)
+			display: block
+		&:hover
+			opacity: 1
+			background: #3578b7
+			color: $color-white
+		&:focus
+			box-shadow: none
 
 // MIFEED COMMUNITY
 
@@ -655,6 +703,8 @@ a
 				background-image: url(../img/youth_sports.png) !important
 			&.img-box-school
 				background-image: url(../img/school.png) !important
+		@media (max-width: 1199.98px)
+			background: $color-gray
 
 .text-box-2
 	padding: 24px 0 32px
@@ -879,7 +929,6 @@ a
 				transform: translateX(-3px)
 
 .heatmap
-	border-radius: 8px
 	.leaflet-control-attribution, .leaflet-left
 		display: none
 
@@ -890,10 +939,12 @@ a
 	min-height: 320px
 	position: relative
 	> .heatmap
+		border-radius: 8px
 		min-height: 320px
 
 #menu-map
 	> .heatmap
+		border-radius: 8px
 		min-height: 660px
 
 .btn-map
@@ -914,6 +965,8 @@ a
 	position: absolute
 	bottom: 14px
 	left: 14px
+	@media (max-width: 1199.98px)
+		display: none
 
 #menu-map
 	position: absolute
@@ -940,12 +993,16 @@ a
 
 .map-search
 	position: absolute
-	top: 20px
-	display: flex
-	flex-direction: column
+	top: 82px
 	left: 20px
-	bottom: 20px
-	min-width: 230px
+	right: 20px
+	@media (min-width: 1200px)
+		display: flex
+		top: 20px
+		right: auto
+		bottom: 20px
+		flex-direction: column
+		min-width: 230px
 
 .filter-box
 	padding: 25px 20px 15px
@@ -959,11 +1016,15 @@ a
 	> .box-search
 		position: relative
 		+ .box-search
-			margin-top: 20px
+				margin-top: 20px
 		&:not(:first-child)
 			display: none
 		.cross-red
 			display: none
+	.menubar-map &
+		> .box-search
+			+ .box-search
+					margin-top: 0
 
 .form-map-select
 	position: relative
@@ -979,12 +1040,13 @@ a
 		width: 15px
 		display: inline-block
 		border-radius: 100px
-		opacity: 0
 		pointer-events: none
 		background-image: url(../img/cross-red.png)
 		background-repeat: no-repeat
 		background-position: center center
 		background-size: 15px 15px
+		@media (min-width: 1200px)
+			opacity: 0
 	&:hover
 		.cross-red
 			opacity: 1
@@ -998,10 +1060,12 @@ a
 	.select2-selection--single
 		background: $color-gray
 		border: 1px solid $color-gray
-		padding: 0px 40px 0px 18px
+		padding: 0px 32px 0px 12px
 		transition: $transition
 		height: 45px
 		box-shadow: 0 2px 3px rgba(0, 0, 0, .15)
+		.menubar-map &
+			background: $color-white
 		.select2-selection__rendered
 			padding-left: 0
 			padding-right: 0
@@ -1027,7 +1091,7 @@ a
 		padding: 4px
 		top: -45px
 		padding: 0
-		z-index: 1029
+		z-index: 1050
 		.select2-search--dropdown
 			padding: 0
 			.select2-search__field

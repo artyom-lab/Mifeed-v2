@@ -14,12 +14,28 @@ $(document).on('click.bs.dropdown.data-api', '.dropdown-menu', function (e) {
   navbar();
   $(window).on("scroll", navbar);
 
-  $(".more").on("click", function() {
-    $("body").addClass("menubar");
+  $(".btn-aside-map").on("click", function() {
+    $("body").addClass("menubar-map");
   });
 
-  $(".btn-close-aside").on("click", function() {
-    $("body").removeClass("menubar");
+  $(".aside-map-close").on("click", function() {
+    $("body").removeClass("menubar-map");
+  });
+
+  $(".btn-aside-locations").on("click", function() {
+    $("body").addClass("menubar-locations");
+  });
+
+  $(".aside-locations-close").on("click", function() {
+    $("body").removeClass("menubar-locations");
+  });
+
+  $(".btn-aside-allnews").on("click", function() {
+    $("body").addClass("menubar-allnews");
+  });
+
+  $(".aside-allnews-close").on("click", function() {
+    $("body").removeClass("menubar-allnews");
   });
 
   $(".dropdown-close").on("click", function() {
@@ -27,7 +43,7 @@ $(document).on('click.bs.dropdown.data-api', '.dropdown-menu', function (e) {
   });
 
   $(".btn-browse").on("click", function() {
-    $("body").toggleClass("menubar-2");
+    $("body").addClass("menubar-2");
   });
 
   $(".menu-map-close").on("click", function() {
