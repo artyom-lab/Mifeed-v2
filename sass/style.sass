@@ -1,0 +1,1066 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300i,300,400,700&display=swap')
+
+@font-face
+	font-family: 'MyriadPro-Regular'
+	src: url('../fonts/MyriadPro-Regular.ttf')
+	font-weight: normal
+@font-face
+	font-family: 'MyriadPro-Semibold'
+	src: url('../fonts/MyriadPro-Semibold.ttf')
+	font-weight: 600
+@font-face
+	font-family: 'MyriadPro-Bold'
+	src: url('../fonts/MyriadPro-Bold.ttf')
+	font-weight: 700
+@font-face
+	font-family: 'MyriadPro-Black'
+	src: url('../fonts/MyriadPro-Black.ttf')
+	font-weight: 900
+@font-face
+	font-family: 'Georgia-Bold-Italic'
+	src: url('../fonts/Georgia-Bold-Italic.ttf')
+	font-weight: 700
+
+$color-black: #000
+$color-white: #FFF
+$color-white-2: #f5f8fa
+$color-blue: #1b9ce5
+$color-blue-2: #34a6e7
+$color-red: #fc4445
+$color-gray: #f0f2f5
+$color-gray-2: #575757
+$color-input: #c0c0c0
+$color-bg: #eff1f4
+$color-selectize: #d7d8d9
+$color-sidebar: #f9f9f9
+
+.gray
+	color: $color-input
+
+.bg-white
+	background: $color-white
+
+.roboto
+	font-family: 'Roboto', sans-serif
+
+$transition: .3s
+
+* 
+	outline: none !important
+
+img 
+	max-width: 100%
+	height: auto
+
+body 
+	font-family: 'MyriadPro-Regular', sans-serif
+	background: $color-gray
+
+a 
+	text-decoration: none !important
+	transition: $transition
+	&:hover
+		opacity: .7
+	&.black
+		color: $color-black
+
+@media (min-width: 1400px)
+	.container 
+		max-width: 1230px
+
+.w-300
+	@media (min-width: 1200px)
+		width: 300px
+
+.row-4
+	margin-left: -4px
+	margin-right: -4px
+	[class*='col']
+		padding-left: 4px
+		padding-right: 4px
+
+.row-8
+	margin-left: -8px
+	margin-right: -8px
+	[class*='col']
+		padding-left: 8px
+		padding-right: 8px
+
+.btn-subscribe
+	font-size: 13px
+	transition: $transition
+	color: $color-white
+	border-radius: 100px
+	background: $color-blue
+	text-transform: uppercase
+	padding: 7.5px 12px
+	&:hover, &:focus
+		opacity: .8
+		color: $color-white
+		box-shadow: none
+
+.fz-9
+	font-size: 9px
+.fz-11
+	font-size: 11px
+.fz-12
+	font-size: 12px
+.fz-13
+	font-size: 13px
+.fz-14
+	font-size: 14px
+.fz-15
+	font-size: 15px
+.fz-18
+	font-size: 18px
+
+.lh-12
+	line-height: 1.2
+.lh-1
+	line-height: 1
+
+.h1, h1, .h2, h2, .h3, h3, .h4, h4, .h5, h5, .h6, h6
+	a 
+		color: $color-black
+		&:hover
+			color: $color-black
+
+.h1, h1
+	font-size: 42px
+	color: $color-white
+	font-family: 'Roboto', sans-serif
+	font-weight: 300
+
+.h2, h2
+	font-size: 24px
+	font-weight: bold
+
+.h3, h3
+	font-size: 22px
+	font-weight: 900
+	line-height: 1.2
+	@media (max-width: 575.98px)
+		font-size: 20px
+
+.h4, h4
+	font-size: 22px
+	line-height: 1.2
+	font-family: 'Georgia-Bold-Italic', sans-serif
+
+.h5, h5
+	font-size: 18px
+	font-weight: bold
+
+.content-box
+	border-radius: 15px 
+	background: $color-white
+	padding: 16px 0 24px
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .15)
+	.title
+		font-size: 18px
+		font-weight: bold
+		border-bottom: 1px solid $color-white-2
+		padding: 0 16px 8px
+	.box-bottom
+		color: $color-gray-2
+		padding: 8px 16px 0
+	.news-box
+		line-height: 1.2
+		padding-left: 16px
+		padding-right: 16px
+		&:not(:last-child)
+			margin-bottom: 16px
+			padding-bottom: 12px
+			border-bottom: 1px solid $color-white-2 
+
+.a-blue
+	display: inline-block
+	text-transform: uppercase
+	margin-top: 6px
+	font-size: 13px
+.a-red
+	color: $color-red
+	font-style: italic
+	font-weight: bold
+	&:hover
+		color: $color-red
+.loc-link
+	margin-top: 0
+	text-transform: initial
+	font-weight: normal
+
+.form-subscribe
+	.form-control
+		border-radius: 100px
+		padding: 0 20px
+		background: $color-white-2
+		height: 37px
+		font-size: 14px
+		border: 0
+		&:focus
+			box-shadow: none
+			background: $color-white-2
+
+.nearby
+	display: inline-block
+	padding: 4px 16px
+	background: $color-white
+	color: $color-black
+	font-size: 15px
+	border-radius: 100px
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .15)
+	font-weight: bold
+	&:hover
+		color: $color-black
+
+.nearby-2
+	font-size: 19px
+	padding-top: 0
+	padding-bottom: 0
+	.fa-pencil
+		font-size: 9px
+		color: #209ee6
+
+.dropdown-2
+	margin-bottom: 16px
+	.dropdown-toggle
+		&:after 
+			display: none
+	.dropdown-menu
+		min-width: 270px
+		overflow: hidden
+		border: 0
+		border-radius: 15px
+		margin-left: 15px
+		box-shadow: 0 1px 2px rgba(0, 0, 0, .15)
+		@media (max-width: 767.98px)
+			top: calc(100% + 0.5rem) !important
+			transform: none !important
+			margin-left: 0
+		.radio-group
+			font-size: 12px
+			display: block
+			margin-bottom: 2px
+			cursor: pointer
+			input
+				display: none
+				~ span
+					display: block
+					padding: 6px 16px
+					white-space: nowrap
+					text-overflow: ellipsis
+					overflow: hidden
+				&:checked, &:hover
+					~ span
+						transition: $transition
+						background: $color-gray
+						border-radius: 100px
+	&.dropdown-story
+		.dropdown-menu
+			@media (max-width: 1199.98px)
+				top: calc(100% + 0.5rem) !important
+				transform: none !important
+				margin-left: 0
+
+.category 
+	display: block
+	padding: 8px 
+	border-radius: 100px
+	font-size: 18px
+	color: $color-black
+	cursor: pointer
+	margin-bottom: 4px
+	transition: $transition
+	&:hover
+		color: $color-black
+		opacity: 1
+		background: $color-white
+	&.active
+		background: $color-white
+		box-shadow: 0 1px 2px rgba(0, 0, 0, .15)
+		font-weight: bold
+	&.disabled
+		&:hover
+			background: initial
+	img 
+		max-height: 35px
+
+.section-white
+	background: $color-white
+	border-radius: 15px
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .15)
+	overflow: hidden
+
+.bg-img
+	background-size: cover
+	background-position: center center
+	height: auto
+
+.img-wrap 
+	overflow: hidden
+	transition: $transition
+	.bg-wrap
+		transition: $transition
+	@media (min-width: 1200px)
+		&:hover
+			.bg-wrap
+				transform: scale(1.1) 
+
+.text-box
+	padding: 16px 0 24px
+	&:not(:last-child)
+		border-bottom: 1px solid #dfdfe6
+	.text-box-inside
+		padding-left: 20px
+		padding-right: 20px
+		@media (max-width: 767.98px)
+			padding-left: 16px
+			padding-right: 16px
+.blue-link
+	color: #007bff
+	font-size: 13px
+	font-weight: bold
+.data
+	font-size: 13px
+
+.story-box
+	padding: 16px 30px 24px
+	@media (max-width: 1199.98px)
+		padding-left: 20px
+		padding-right: 20px
+	@media (max-width: 767.98px)
+		padding-left: 16px
+		padding-right: 16px
+
+.calendar-red
+	display: inline-block
+	text-align: center
+	border-radius: 6px
+	.month, .number 
+	color: $color-white
+	background: $color-red
+	.month
+		font-size: 12px
+		padding-left: 10px
+		padding-right: 10px
+		background-clip: padding-box
+		border-bottom: 1px solid $color-white
+	.number 
+		font-weight: bold
+		font-size: 13px
+
+.fa-map-marker-alt
+	color: $color-red
+	font-size: 12px
+
+.social-icons
+	display: flex
+	padding: 14px 0
+	.nav-link
+		padding: 4px
+		transition: $transition
+		img 
+			height: 25px
+			width: 25px
+			max-height: 25px
+			border-radius: 100px
+
+.o-auto
+	@media (max-width: 575.98px)
+		overflow-x: auto
+
+.table-statistics
+	min-width: 380px
+	.table-box
+		border-bottom: 1px solid #d5d5d5
+		padding: 10px 0
+	.bb-black
+		border-bottom: 2px solid $color-black
+
+// NAVBAR
+
+.page-navbar
+	right: 0
+	left: 0
+	position: absolute
+	top: -99px
+	margin-top: 99px
+	z-index: 1002
+	&.fixed-top
+		position: fixed
+		top: 0
+		margin-top: 0
+		transition: top .5s
+		.header-nav
+			display: none
+		.nav-links
+			box-shadow: 0 1px 2px rgba(0, 0, 0, .15)	
+			.navbar-brand
+				display: inline-block !important
+
+.mt-190 
+	margin-top: 50px
+	@media (max-width: 1199.98px)
+		margin-top: 185px
+	@media (max-width: 991.98px)
+		margin-top: 240px
+	@media (max-width: 767.98px)
+		margin-top: 266px
+	@media (max-width: 575.98px)
+		margin-top: 340px
+
+.header-nav
+	transition: $transition
+	background: $color-gray !important
+	padding: 18px 16px
+	@media (max-width: 575.98px)
+		padding: 18px 0
+	.navbar-brand
+		padding: 0
+		text-align: center
+		margin-right: 0
+		img 
+			width: 170px
+			@media (max-width: 767.98px)
+				width: 140px
+		.text 
+			color: $color-black
+			font-size: 18px
+			margin-top: 8px
+			@media (max-width: 767.98px)
+				font-size: 14px
+
+.form-search-navbar
+	.form-control
+		height: 42px
+		border: 0
+		border-radius: 6px
+		box-shadow: 0 1px 2px rgba(0, 0, 0, .15)	
+		font-size: 16px
+		padding: 6px 18px 6px 50px
+		min-width: 300px
+		color: $color-input
+		@media (max-width: 991.98px)
+			min-width: auto
+			width: 100%
+		&::-webkit-input-placeholder
+			color: $color-input
+		&::-moz-placeholder
+			color: $color-input
+		&:-ms-input-placeholder
+			color: $color-input
+	.fa-magnifying-glass
+		transition: $transition
+		position: absolute
+		background: none
+		border: none
+		color: $color-input
+		top: 50%
+		transform: translateY(-50%)
+		left: 16px
+		padding: 0
+		font-size: 18px
+	&.search-aside
+		.form-control
+			box-shadow: 0 1px 2px rgba(0, 0, 0, .35)	
+			background: $color-bg
+			color: $color-black
+			&::-webkit-input-placeholder
+				color: $color-black
+			&::-moz-placeholder
+				color: $color-black
+			&:-ms-input-placeholder
+				color: $color-black
+		.fa-magnifying-glass
+			color: $color-black
+	&.search-black
+		.form-control
+			padding: 6px 18px 6px 40px
+		.fa-magnifying-glass
+			color: $color-black
+
+.select-state
+	font-size: 16px
+	border: 0	
+	cursor: pointer
+	min-width: 300px
+	height: 42px
+	padding: 6px 28px 6px 20px
+	color: $color-input
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .15)
+	background: $color-white url(../img/arrow-select.png) no-repeat right 0.75rem center/12px 8px
+	@media (max-width: 991.98px)
+		min-width: auto
+		width: 100%
+	&:focus 
+		box-shadow: 0 1px 2px rgba(0, 0, 0, .15)
+	&.select-aside
+		background: $color-bg url(../img/arrow-select.png) no-repeat right 0.75rem center/12px 8px
+		color: $color-black
+		box-shadow: 0 1px 2px rgba(0, 0, 0, .35)
+	&.select-gray
+		min-width: auto
+		width: 100%
+		font-weight: bold
+
+.nav-links
+	padding: 4px 0
+	background: $color-gray !important
+	z-index: 1002
+	.navbar-brand
+		padding: 8px 0
+		font-size: 0
+		display: none
+		margin-bottom: 2px
+		@media (max-width: 991.98px)
+			margin-right: 8px
+		@media (max-width: 767.98px)
+			margin-right: 8px
+			margin-bottom: 4px
+		img 
+			width: 100px
+			@media (max-width: 767.98px)
+				width: 80px
+	.nav-link
+		color: $color-black !important
+		padding: 4px 10px !important
+		font-size: 16px
+		@media (max-width: 767.98px)
+			font-size: 14px
+		&.more
+			font-size: 18px !important
+		&.events
+			position: relative
+			&:after
+				content: ""
+				position: absolute
+				right: 0
+				top: 50% 
+				transform: translateY(-50%)
+				width: 1px
+				height: 22px
+				background: $color-input
+
+.menubar
+	overflow: hidden
+
+#menu 
+	position: fixed
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	overflow: auto
+	z-index: 1031
+	padding: 26px 0
+	transition: .5s
+	opacity: 0
+	background: $color-white
+	pointer-events: none
+	transform: scale(0)
+	@media (min-width: 1200px)
+		display: none
+	.menubar &
+		opacity: 1
+		pointer-events: auto
+		transform: scale(1)
+	.navbar-brand
+		padding: 0
+		text-align: center
+		margin-right: 0
+		img 
+			width: 170px
+			@media (max-width: 767.98px)
+				width: 140px
+
+.block-links
+	div 
+		margin-bottom: 8px
+		a 
+			color: $color-black
+			font-size: 18px
+			@media (max-width: 767.98px)
+				font-size: 16px
+			&:hover
+				color: $color-black
+
+.btn-close-aside
+	position: absolute
+	right: 15px
+
+// MIFEED COMMUNITY
+
+.nearby-3
+	display: block
+	color: $color-black
+	background: $color-white
+	font-size: 24px
+	position: relative
+	line-height: 1.2
+	padding: 8px 30px 8px 20px
+	border-radius: 8px
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .15)
+	.fa-chevron-right
+		position: absolute
+		right: 15px
+		top: 50%
+		transition: $transition
+		font-size: 14px
+		transform: translateY(-50%)
+	&:hover
+		color: $color-black
+		opacity: 1
+		.fa-chevron-right
+			right: 10px
+
+.a-blue-2
+	display: inline-block
+	text-transform: initial
+	margin-top: 6px
+	font-size: 13px
+	color: $color-blue
+
+.category-new
+	padding: 8px 20px
+	border-radius: 8px
+	margin-bottom: 9px
+	.img-box
+		max-height: 30px
+		height: 25px
+		width: 25px
+	&:hover, &.active
+		box-shadow: 0 1px 2px rgba(0, 0, 0, .15)
+		.img-box
+			&.img-box-all
+				background-image: url(../img/all.png) !important
+			&.img-box-town
+				background-image: url(../img/town_feed.png) !important
+			&.img-box-events
+				background-image: url(../img/events.png) !important
+			&.img-box-local
+				background-image: url(../img/government.png) !important
+			&.img-box-business
+				background-image: url(../img/business.png) !important
+			&.img-box-crime
+				background-image: url(../img/crime.png) !important
+			&.img-box-camp
+				background-image: url(../img/camp_elections.png) !important
+			&.img-box-milestones
+				background-image: url(../img/milestones.png) !important
+			&.img-box-religion
+				background-image: url(../img/religion.png) !important
+			&.img-box-sports
+				background-image: url(../img/prep_sports.png) !important
+			&.img-box-youth
+				background-image: url(../img/youth_sports.png) !important
+			&.img-box-school
+				background-image: url(../img/school.png) !important
+
+.text-box-2
+	padding: 24px 0 32px
+
+.calendar-black
+	text-align: center
+	font-weight: bold
+	width: 38px
+	.number
+		font-size: 36px
+		line-height: 1
+	.month 
+		font-size: 10px
+		text-transform: uppercase
+
+.content-box-2
+	padding-bottom: 40px
+	.title
+		padding: 0 20px 8px
+		@media (max-width: 575.98px)
+			padding: 0 16px 8px
+	.news-box
+		line-height: 1.2
+		padding-left: 20px
+		padding-right: 20px
+		@media (max-width: 575.98px)
+			padding-left: 16px
+			padding-right: 16px
+		&:not(:last-child)
+			padding-bottom: 20px
+			margin-bottom: 20px
+
+.w-80
+	display: inline-block
+	width: 80px
+	@media (max-width: 575.98px)
+		width: 60px
+
+.brand-box
+	width: 65px
+
+.a-gray
+	display: inline-block
+	font-size: 14px
+	color: $color-input
+	&:hover
+		color: $color-input
+
+// HP
+
+.section-hp	
+	background-image: url(../img/hp.jpg)
+	background-repeat: no-repeat
+	background-size: cover 
+	background-position: top center
+	min-height: 700px
+	position: relative
+	text-align: center
+	box-shadow: inset 0px -50px 30px -8px rgba(239, 241, 245, .8)
+	overflow: hidden
+	@media (max-width: 767.98px)
+		min-height: 550px
+	> .container
+		padding-top: 185px
+	.section-top
+		position: absolute
+		padding: 26px 16px
+		left: 0
+		top: 0
+		right: 0
+		background: rgba(0, 0, 0, .25)
+		@media (max-width: 767.98px)
+			padding: 16px
+		img 
+			width: 182px
+			@media (max-width: 767.98px)
+				width: 140px
+
+.search-community
+	position: relative
+	.form-control
+		height: 65px
+		border: 0
+		border-radius: 6px
+		box-shadow: 0 1px 2px rgba(0, 0, 0, .15)	
+		font-size: 16px
+		padding: 6px 18px 6px 60px
+		color: $color-black
+		&::-webkit-input-placeholder
+			color: $color-input
+		&::-moz-placeholder
+			color: $color-input
+		&:-ms-input-placeholder
+			color: $color-input
+		@media (max-width: 767.98px)
+			height: 50px
+			padding: 6px 18px 6px 45px
+	.fa-magnifying-glass
+		transition: $transition
+		position: absolute
+		background: none
+		border: none
+		color: $color-black
+		top: 50%
+		transform: translateY(-50%)
+		left: 20px
+		padding: 0
+		font-size: 28px
+		@media (max-width: 767.98px)
+			font-size: 20px
+			left: 12px
+
+.us-box 
+	text-align: center
+	margin-top: -250px
+	margin-bottom: 70px
+	@media (max-width: 767.98px)
+		margin-top: -100px
+	.map-wrap
+		position: relative
+		&:before 
+			content: ''
+			display:  block
+			padding-top: 68.479%
+		.map 
+			position: absolute !important
+			top: 0
+			right: 0
+			bottom: 0
+			left: 0
+		.jvectormap-zoomout, .jvectormap-zoomin
+			display: none
+
+.link-coverage
+	margin-bottom: 12px
+	img 
+		transition: $transition
+		max-height: 32px
+		width: 32px
+	a 
+		color: $color-black
+		opacity: 1
+		font-size: 17px
+	&:hover
+		img 
+			transform: scale(1.08)
+
+.card-trending
+	background: $color-white
+	border-radius: 15px
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .15)
+	overflow: hidden
+	display: flex
+	flex-direction: column 
+	height: 100%
+	.card-content
+		padding: 10px 20px 15px
+		line-height: 1.3
+		display: flex
+		flex-direction: column
+		flex-grow: 1
+		.blue-link
+			color: $color-blue-2
+			font-size: 13px
+			display: inline-block
+			font-weight: normal
+		.blue-link-big
+			font-size: 15px
+
+// VERSION-2
+
+.cook-county-link
+	font-size: 14px
+	position: relative
+	background: $color-gray
+	border-radius: 5px
+	width: 113px
+	display: inline-block
+	color: $color-black
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .15)
+	padding: 4px 10px
+	.fa-chevron-right
+		position: absolute
+		right: 8px
+		top: 50%
+		transition: $transition
+		font-size: 12px
+		transform: translateY(-50%)
+	&:hover
+		color: $color-black
+
+.dropdown-county
+	.dropdown-toggle
+		&:after 
+			display: none
+	.dropdown-menu
+		min-width: 290%
+		padding: 16px 20px
+		overflow: hidden
+		top: -70px !important
+		margin-top: 0
+		position: relative
+		border: 0
+		border-radius: 8px
+		box-shadow: 2px 2px 14px rgba(0, 0, 0, .15)
+		.county-link
+			font-size: 14px
+			color: $color-black
+			display: inline-block
+			margin-bottom: 4px
+			&:hover
+				color: $color-blue
+				opacity: 1
+		.dropdown-close
+			position: absolute
+			top: 16px
+			transition: $transition
+			color: $color-black
+			right: 20px
+			font-size: 16px
+			&:hover
+				transform: translateX(-3px)
+
+.heatmap
+	border-radius: 8px
+	.leaflet-control-attribution, .leaflet-left
+		display: none
+
+.cart-map
+	border-radius: 8px
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .15)
+	background: $color-white
+	min-height: 320px
+	position: relative
+	> .heatmap
+		min-height: 320px
+
+#menu-map
+	> .heatmap
+		min-height: 660px
+
+.btn-map
+	font-size: 15px
+	transition: $transition
+	color: $color-white
+	border-radius: 8px
+	background: $color-blue
+	padding: 12px 24px
+	&:hover
+		opacity: 1
+		background: #3578b7
+		color: $color-white
+	&:focus
+		box-shadow: none
+
+.btn-browse
+	position: absolute
+	bottom: 14px
+	left: 14px
+
+#menu-map
+	position: absolute
+	top: -94px
+	left: 0
+	min-width: 290%
+	min-height: 660px
+	z-index: 2
+	transition: $transition
+	opacity: 0
+	background: #FFF
+	pointer-events: none
+	border-radius: 8px
+	box-shadow: 2px 2px 14px rgba(0, 0, 0, .15)
+	.menubar-2 &
+		opacity: 1
+		pointer-events: auto
+
+.menu-map-close
+	position: absolute
+	top: 14px
+	right: 14px
+	padding: 10px
+
+.map-search
+	position: absolute
+	top: 20px
+	display: flex
+	flex-direction: column
+	left: 20px
+	bottom: 20px
+	min-width: 230px
+
+.filter-box
+	padding: 25px 20px 15px
+	background: $color-white
+	border-radius: 8px
+	font-size: 14px
+	flex-grow: 1
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .15)
+
+.section-map-hide
+	> .box-search
+		position: relative
+		+ .box-search
+			margin-top: 20px
+		&:not(:first-child)
+			display: none
+		.cross-red
+			display: none
+
+.form-map-select
+	position: relative
+	.cross-red
+		transition: $transition
+		position: absolute
+		top: 50%
+		right: 10px
+		cursor: pointer
+		transform: translateY(-50%)
+		z-index: 100
+		height: 15px
+		width: 15px
+		display: inline-block
+		border-radius: 100px
+		opacity: 0
+		pointer-events: none
+		background-image: url(../img/cross-red.png)
+		background-repeat: no-repeat
+		background-position: center center
+		background-size: 15px 15px
+	&:hover
+		.cross-red
+			opacity: 1
+			pointer-events: initial
+			&:hover 
+				opacity: .8 
+
+.select2-container
+	display: block
+	width: auto !important
+	.select2-selection--single
+		background: $color-gray
+		border: 1px solid $color-gray
+		padding: 0px 40px 0px 18px
+		transition: $transition
+		height: 45px
+		box-shadow: 0 2px 3px rgba(0, 0, 0, .15)
+		.select2-selection__rendered
+			padding-left: 0
+			padding-right: 0
+	.selection
+		display: block
+.select2-container--default .select2-selection--single
+	border-radius: 8px
+	.select2-selection__rendered
+		color: $color-black
+		line-height: 45px
+		font-size: 13px
+		font-weight: bold
+	.select2-selection__arrow
+		display: none
+.select2-results__options
+	> li:first-child:not([role="alert"])
+		display: none
+.select2-container--open 
+	.select2-dropdown
+		border: 1px solid $color-selectize
+		border-radius: 8px
+		overflow: hidden
+		padding: 4px
+		top: -45px
+		padding: 0
+		z-index: 1029
+		.select2-search--dropdown
+			padding: 0
+			.select2-search__field
+				border: 0
+				border-bottom: 1px solid $color-selectize
+				color: $color-black
+				border-radius: 8px 8px 0 0
+				padding: 4px 12px
+				height: 45px
+				font-size: 14px
+		.select2-results
+			padding: 4px
+			.select2-results__options
+				max-height: 234px
+				padding: 0 4px
+				&::-webkit-scrollbar
+					width: 4px
+					height: 4px
+				&::-webkit-scrollbar-track
+					background-color: transparent
+					border-radius: 2px
+				&::-webkit-scrollbar-thumb
+					background-color: $color-selectize
+					border-radius: 2px	
+				.select2-results__option
+					font-size: 14px
+					padding: 4px 6px
+					color: $color-black
+					background-color: transparent
+				.select2-results__option--highlighted.select2-results__option--selectable
+					background: transparent
+					&:hover, &.select2-results__option--selected
+						background-color: $color-sidebar
+						border-radius: 5px
+						border: 1px solid $color-selectize
+						font-weight: bold
