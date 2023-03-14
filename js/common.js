@@ -53,6 +53,9 @@ $(document).on('click.bs.dropdown.data-api', '.dropdown-menu', function (e) {
   $('#map').vectorMap({
     map: 'us_lcc',
     backgroundColor: 'transparent',
+    zoomOnScroll: false,
+    regionsSelectable: true,
+    regionsSelectableOne: true,
     regionStyle: {
       initial: {
         fill: '#1b9ce5',
@@ -60,6 +63,10 @@ $(document).on('click.bs.dropdown.data-api', '.dropdown-menu', function (e) {
         "stroke-width": 2,
       },
       hover: {
+        fill: '#307fc9',
+        "fill-opacity": 1,
+      },
+      selected: {
         fill: '#307fc9',
         "fill-opacity": 1,
       },
