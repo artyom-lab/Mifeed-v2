@@ -60,7 +60,7 @@ $(document).on('click.bs.dropdown.data-api', '.dropdown-menu', function (e) {
         "stroke-width": 2,
       },
       hover: {
-        fill: '#0e2241',
+        fill: '#307fc9',
         "fill-opacity": 1,
       },
     },
