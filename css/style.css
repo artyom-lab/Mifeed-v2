@@ -839,9 +839,6 @@ a {
   @media (max-width: 767.98px) {
     .us-box {
       margin-top: -100px; } }
-  @media (min-width: 1200px) {
-    .us-box:hover {
-      transform: scale(1.05); } }
   .us-box .map-wrap {
     position: relative; }
     .us-box .map-wrap:before {
