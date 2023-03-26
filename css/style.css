@@ -853,6 +853,8 @@ a {
       left: 0; }
     .us-box .map-wrap .jvectormap-zoomout, .us-box .map-wrap .jvectormap-zoomin {
       display: none; }
+    .us-box .map-wrap .jvectormap-container, .us-box .map-wrap svg {
+      touch-action: initial; }
 
 .link-coverage {
   margin-bottom: 12px; }
