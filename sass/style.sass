@@ -656,16 +656,16 @@ a
 	box-shadow: 0 1px 2px rgba(0, 0, 0, .15)
 	.fa-chevron-right
 		position: absolute
-		right: 15px
+		right: 20px
 		top: 50%
 		transition: $transition
 		font-size: 14px
-		transform: translateY(-50%)
+		transform: translateY(-50%) rotate(90deg)
 	&:hover
 		color: $color-black
 		opacity: 1
 		.fa-chevron-right
-			right: 10px
+			transform: translateY(-25%) rotate(90deg)
 
 .a-blue-2
 	display: inline-block
@@ -911,32 +911,22 @@ a
 		&:after 
 			display: none
 	.dropdown-menu
-		min-width: 290%
 		padding: 16px 20px
 		overflow: hidden
-		top: -70px !important
+		width: 100%
+		top: 0 !important
+		transform: none !important
 		margin-top: 0
-		position: relative
+		transition: $transition
 		border: 0
 		border-radius: 8px
 		box-shadow: 2px 2px 14px rgba(0, 0, 0, .15)
-		.county-link
-			font-size: 14px
-			color: $color-black
-			display: inline-block
-			margin-bottom: 4px
-			&:hover
-				color: $color-blue
-				opacity: 1
-		.dropdown-close
-			position: absolute
-			top: 16px
-			transition: $transition
-			color: $color-black
-			right: 20px
-			font-size: 16px
-			&:hover
-				transform: translateX(-3px)
+		display: block
+		opacity: 0
+		pointer-events: none
+		&.select-visible
+			opacity: 1
+			pointer-events: initial
 
 .heatmap
 	.leaflet-control-attribution, .leaflet-left
@@ -984,7 +974,7 @@ a
 	left: 0
 	min-width: 290%
 	min-height: 660px
-	z-index: 2
+	z-index: 1000
 	transition: $transition
 	opacity: 0
 	background: #FFF
@@ -1086,7 +1076,7 @@ a
 	.select2-selection__rendered
 		color: $color-black
 		line-height: 45px
-		font-size: 13px
+		font-size: 14px
 		font-weight: bold
 	.select2-selection__arrow
 		display: none
@@ -1138,3 +1128,6 @@ a
 						border-radius: 5px
 						border: 1px solid $color-selectize
 						font-weight: bold
+
+
+

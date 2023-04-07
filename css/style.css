@@ -658,16 +658,16 @@ a {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15); }
   .nearby-3 .fa-chevron-right {
     position: absolute;
-    right: 15px;
+    right: 20px;
     top: 50%;
     transition: 0.3s;
     font-size: 14px;
-    transform: translateY(-50%); }
+    transform: translateY(-50%) rotate(90deg); }
   .nearby-3:hover {
     color: #000;
     opacity: 1; }
     .nearby-3:hover .fa-chevron-right {
-      right: 10px; }
+      transform: translateY(-25%) rotate(90deg); }
 
 .a-blue-2 {
   display: inline-block;
@@ -914,32 +914,22 @@ a {
 .dropdown-county .dropdown-toggle:after {
   display: none; }
 .dropdown-county .dropdown-menu {
-  min-width: 290%;
   padding: 16px 20px;
   overflow: hidden;
-  top: -70px !important;
+  width: 100%;
+  top: 0 !important;
+  transform: none !important;
   margin-top: 0;
-  position: relative;
+  transition: 0.3s;
   border: 0;
   border-radius: 8px;
-  box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.15); }
-  .dropdown-county .dropdown-menu .county-link {
-    font-size: 14px;
-    color: #000;
-    display: inline-block;
-    margin-bottom: 4px; }
-    .dropdown-county .dropdown-menu .county-link:hover {
-      color: #1b9ce5;
-      opacity: 1; }
-  .dropdown-county .dropdown-menu .dropdown-close {
-    position: absolute;
-    top: 16px;
-    transition: 0.3s;
-    color: #000;
-    right: 20px;
-    font-size: 16px; }
-    .dropdown-county .dropdown-menu .dropdown-close:hover {
-      transform: translateX(-3px); }
+  box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.15);
+  display: block;
+  opacity: 0;
+  pointer-events: none; }
+  .dropdown-county .dropdown-menu.select-visible {
+    opacity: 1;
+    pointer-events: initial; }
 
 .heatmap .leaflet-control-attribution, .heatmap .leaflet-left {
   display: none; }
@@ -986,7 +976,7 @@ a {
   left: 0;
   min-width: 290%;
   min-height: 660px;
-  z-index: 2;
+  z-index: 1000;
   transition: 0.3s;
   opacity: 0;
   background: #FFF;
@@ -1087,7 +1077,7 @@ a {
   .select2-container--default .select2-selection--single .select2-selection__rendered {
     color: #000;
     line-height: 45px;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: bold; }
   .select2-container--default .select2-selection--single .select2-selection__arrow {
     display: none; }

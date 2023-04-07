@@ -38,10 +38,6 @@ $(document).on('click.bs.dropdown.data-api', '.dropdown-menu', function (e) {
     $("body").removeClass("menubar-allnews");
   });
 
-  $(".dropdown-close").on("click", function() {
-    $(this).closest(".dropdown-menu").removeClass("show");
-  });
-
   $(".btn-browse").on("click", function() {
     $("body").addClass("menubar-2");
   });
@@ -89,6 +85,14 @@ $(document).on('click.bs.dropdown.data-api', '.dropdown-menu', function (e) {
     $(this).closest('.box-search').nextAll().hide();
     $(this).hide();
     $(this).closest('.box-search').nextAll().find('.cross-red').hide();
+  });
+
+  $(".drop-select").on("click", function() {
+    $(this).parent().find(".dropdown-menu").addClass("select-visible");
+  });
+
+  $(".dropdown-close").on("click", function() {
+    $(this).closest(".dropdown-menu").removeClass("select-visible");
   });
 
 });
