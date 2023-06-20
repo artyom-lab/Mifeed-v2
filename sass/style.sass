@@ -55,6 +55,9 @@ img
 body 
 	font-family: 'MyriadPro-Regular', sans-serif
 	background: $color-gray
+	display: flex
+	flex-direction: column
+	min-height: 100vh
 
 a 
 	text-decoration: none !important
@@ -75,14 +78,14 @@ a
 .row-4
 	margin-left: -4px
 	margin-right: -4px
-	[class*='col']
+	> [class*='col']
 		padding-left: 4px
 		padding-right: 4px
 
 .row-8
 	margin-left: -8px
 	margin-right: -8px
-	[class*='col']
+	> [class*='col']
 		padding-left: 8px
 		padding-right: 8px
 
@@ -178,8 +181,7 @@ a
 .a-blue
 	display: inline-block
 	text-transform: uppercase
-	margin-top: 6px
-	font-size: 13px
+	font-size: 14px
 .a-red
 	color: $color-red
 	font-style: italic
@@ -187,9 +189,7 @@ a
 	&:hover
 		color: $color-red
 .loc-link
-	margin-top: 0
-	text-transform: initial
-	font-weight: normal
+	font-size: 13px
 
 .form-subscribe
 	.form-control
@@ -229,16 +229,12 @@ a
 		&:after 
 			display: none
 	.dropdown-menu
-		min-width: 270px
+		min-width: 300px
 		overflow: hidden
 		border: 0
+		transform: translate3d(0, 35px, 0px) !important
 		border-radius: 15px
-		margin-left: 15px
 		box-shadow: 0 1px 2px rgba(0, 0, 0, .15)
-		@media (max-width: 767.98px)
-			top: calc(100% + 0.5rem) !important
-			transform: none !important
-			margin-left: 0
 		.radio-group
 			font-size: 12px
 			display: block
@@ -257,12 +253,6 @@ a
 						transition: $transition
 						background: $color-gray
 						border-radius: 100px
-	&.dropdown-story
-		.dropdown-menu
-			@media (max-width: 1199.98px)
-				top: calc(100% + 0.5rem) !important
-				transform: none !important
-				margin-left: 0
 
 .category 
 	display: block
@@ -296,7 +286,6 @@ a
 	background: $color-white
 	border-radius: 15px
 	box-shadow: 0 1px 2px rgba(0, 0, 0, .15)
-	overflow: hidden
 
 .bg-img
 	background-size: cover
@@ -323,12 +312,19 @@ a
 		@media (max-width: 767.98px)
 			padding-left: 16px
 			padding-right: 16px
+
 .blue-link
 	color: #007bff
-	font-size: 13px
+	font-size: 14px
 	font-weight: bold
+	display: inline-block
+	@media (max-width: 767.98px)
+		font-size: 13px
+
 .data
-	font-size: 13px
+	font-size: 14px
+	@media (max-width: 767.98px)
+		font-size: 13px
 
 .story-box
 	padding: 16px 30px 24px
@@ -387,61 +383,24 @@ a
 // NAVBAR
 
 .page-navbar
-	right: 0
-	left: 0
-	position: absolute
-	top: -99px
-	margin-top: 99px
-	z-index: 1002
-	&.fixed-top
-		position: fixed
-		top: 0
-		margin-top: 0
-		transition: top .5s
-		.nav-links
-			box-shadow: 0 1px 2px rgba(0, 0, 0, .15)	
-
-.mt-190 
-	margin-top: 50px
-	@media (max-width: 1199.98px)
-		margin-top: 185px
-	@media (max-width: 767.98px)
-		margin-top: 160px
-
-.header-nav
-	transition: $transition
 	background: $color-white !important
 	padding: 14px 16px
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .15)	
 	@media (max-width: 575.98px)
 		padding: 14px 0
+	@media (min-width: 992px)
+		position: sticky
+		top: 0
+		z-index: 1020
 	.navbar-brand
 		padding: 0
 		text-align: center
 		margin-right: 0
 		img 
 			width: 150px
-			@media (max-width: 575.98px)
-				width: 100px
 
 .form-search-navbar
-	.form-control
-		height: 46px
-		border: 1px solid $color-gray
-		border-radius: 6px
-		font-size: 16px
-		padding: 6px 40px 6px 18px
-		min-width: 300px
-		color: $color-black
-		box-shadow: none
-		@media (max-width: 991.98px)
-			min-width: auto
-			width: 100%
-		&::-webkit-input-placeholder
-			color: $color-input
-		&::-moz-placeholder
-			color: $color-input
-		&:-ms-input-placeholder
-			color: $color-input
+	position: relative
 	.fa-magnifying-glass
 		transition: $transition
 		position: absolute
@@ -450,18 +409,10 @@ a
 		color: $color-black
 		top: 50%
 		transform: translateY(-50%)
-		right: 12px
+		left: 12px
 		padding: 0
 		font-size: 18px
-	&.search-black
-		.form-control
-			border: 0
-			height: 42px
-			box-shadow: 0 1px 2px rgba(0, 0, 0, .15)	
-			padding: 6px 18px 6px 40px
-		.fa-magnifying-glass
-			left: 12px
-			right: auto
+		z-index: 1031
 
 .select-state
 	font-size: 16px
@@ -486,17 +437,9 @@ a
 		min-width: auto
 		width: 100%
 
-.nav-links
-	padding: 14px 16px
-	background: $color-gray !important
-	position: relative
-	z-index: 1002
-	@media (max-width: 575.98px)
-		padding: 8px 0
-
 .btn-locations
 	position: relative
-	font-size: 16px
+	font-size: 14px
 	border: 0
 	display: block
 	border-radius: 8px
@@ -505,8 +448,6 @@ a
 	font-weight: bold
 	padding: 10px 28px 10px 10px
 	box-shadow: 0 1px 2px rgba(0, 0, 0, .15)
-	@media (max-width: 575.98px)
-		font-size: 14px
 	.fa-chevron-down
 		position: absolute
 		right: 12px
@@ -526,7 +467,7 @@ a
 	display: block
 	background: $color-blue
 	border-radius: 8px
-	padding: 10px 20px
+	padding: 8.5px 20px
 
 .menubar-map, .menubar-locations, .menubar-allnews
 	overflow: hidden
@@ -666,13 +607,6 @@ a
 		opacity: 1
 		.fa-chevron-right
 			transform: translateY(-25%) rotate(90deg)
-
-.a-blue-2
-	display: inline-block
-	text-transform: initial
-	margin-top: 6px
-	font-size: 13px
-	color: $color-blue
 
 .category-new
 	padding: 8px 20px
@@ -876,11 +810,6 @@ a
 		display: flex
 		flex-direction: column
 		flex-grow: 1
-		.blue-link
-			color: $color-blue-2
-			font-size: 13px
-			display: inline-block
-			font-weight: normal
 		.blue-link-big
 			font-size: 15px
 
@@ -911,7 +840,7 @@ a
 		&:after 
 			display: none
 	.dropdown-menu
-		padding: 16px 20px
+		padding: 8px 20px
 		overflow: hidden
 		width: 100%
 		top: 0 !important
@@ -970,9 +899,10 @@ a
 
 #menu-map
 	position: absolute
-	top: -94px
-	left: 0
-	min-width: 290%
+	top: 50%
+	left: 50%
+	min-width: 60%
+	transform: translate(-50%, -50%) scale(0)
 	min-height: 660px
 	z-index: 1000
 	transition: $transition
@@ -980,10 +910,11 @@ a
 	background: #FFF
 	pointer-events: none
 	border-radius: 8px
-	box-shadow: 2px 2px 14px rgba(0, 0, 0, .15)
+	box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.7)
 	.menubar-2 &
 		opacity: 1
 		pointer-events: auto
+		transform: translate(-50%, -50%) scale(1)
 
 .menu-map-close
 	position: absolute
@@ -1129,5 +1060,141 @@ a
 						border: 1px solid $color-selectize
 						font-weight: bold
 
+.select-beast
+	~ .selectize-control
+		height: 40px
+		.selectize-input
+			border: 1px solid $color-gray
+			padding: 10px 10px 10px 36px
+			transition: $transition
+			height: 40px
+			box-shadow: none
+			border-radius: 8px
+			background: $color-white
+			color: $color-black
+			font-size: 15px !important
+			&.focus	
+				border-radius: 8px 8px 0 0
+			.item 
+				overflow: hidden
+				vertical-align: middle
+				white-space: nowrap
+				text-overflow: ellipsis
+				max-width: 120px
+				font-size: 15px
+			input
+				font-size: 15px
+				vertical-align: middle
+				max-width: 300px !important
+				@media (max-width: 767.98px)
+					max-width: 200px !important
+				&::-webkit-input-placeholder
+					color: $color-black
+					font-size: 15px
+					font-weight: normal
+				&::-moz-placeholder
+					color: $color-black
+					font-size: 15px
+					font-weight: normal
+				&:-ms-input-placeholder
+					color: $color-black
+					font-size: 15px
+					font-weight: normal
+			&:after 
+				display: none
+		.selectize-dropdown
+			color: $color-black
+			border: 1px solid $color-gray
+			border-radius: 0 0 8px 8px
+			padding: 5px
+			box-shadow: none
+			.selectize-dropdown-content
+				padding-right: 4px
+				&::-webkit-scrollbar
+					width: 4px
+					height: 4px
+				&::-webkit-scrollbar-track
+					background-color: transparent
+					border-radius: 2px
+				&::-webkit-scrollbar-thumb
+					background-color: $color-gray
+					border-radius: 2px
+			.option 
+				padding-left: 8px
+				padding-right: 8px
+				cursor: pointer
+				font-weight: bold
+				font-size: 15px
+				white-space: nowrap
+				text-overflow: ellipsis
+				overflow: hidden
+				border: 1px solid transparent
+				margin-bottom: 2px
+				&:hover, &.active
+					background-color: $color-white-2
+					border-radius: 5px
+					border: 1px solid $color-gray
 
+.section-main
+	margin-top: 24px
+	margin-bottom: 48px
+	@media (min-width: 992px)
+		height: calc(100vh - 200px)
+		overflow: hidden
+	@media (min-width: 1200px)
+		height: calc(100vh - 140px)
 
+.scroll-content
+	@media (min-width: 992px)
+		overflow-y: auto
+		height: calc(100vh - 200px)
+		&::-webkit-scrollbar
+			width: 0
+	@media (min-width: 1200px)
+		height: calc(100vh - 140px)
+	&.scroll-content-2
+		@media (max-width: 1199.98px)
+			height: auto
+
+.float-section 
+	max-width: 30%
+	width: 100%
+	float: left
+	margin-bottom: 8px
+	margin-right: 16px
+
+// SOCIAL
+
+.a-like
+	color: $color-black
+	display: inline-block
+	&:hover
+		color: $color-black
+	img 
+		width: 20px
+		margin-right: 4px
+		vertical-align: bottom
+	span 
+		line-height: 1
+		vertical-align: bottom
+	&.a-comment
+		margin-top: 16px
+		img, span 
+			vertical-align: top
+
+.dropdown-social
+	.dropdown-toggle
+		&:after 
+			display: none
+	.dropdown-menu
+		padding: 16px
+		font-size: 14px
+		text-align: center
+		border-radius: 8px
+		min-width: 220px
+		box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.25)
+		border: 0
+		.dropdown-item
+			padding: 4px 14px
+			&:active 
+				background: initial
