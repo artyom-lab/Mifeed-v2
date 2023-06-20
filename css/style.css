@@ -1030,7 +1030,8 @@ a {
       border-radius: 8px 8px 0 0;
       padding: 4px 12px;
       height: 45px;
-      font-size: 14px; }
+      font-size: 14px;
+      background: #FFF; }
   .select2-container--open .select2-dropdown .select2-results {
     padding: 4px; }
     .select2-container--open .select2-dropdown .select2-results .select2-results__options {
