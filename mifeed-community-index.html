@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css">
-    <link href="https://cdn.tutorialjinni.com/selectize.js/0.12.6/css/selectize.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://jvectormap.com/css/jquery-jvectormap-2.0.5.css" type="text/css" media="screen"/>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.css"/>
     <link rel="stylesheet" href="css/style.css">
@@ -25,35 +24,84 @@
           </div>
         </div>
         <div class="col-sm mb-3 mb-xl-0">
-          <form class="form-search-navbar">
-            <div class="select-box">
-              <select class="select-beast" placeholder="Search for Community">
-                <option value="">Search for your Community</option>
-                <option value="0">Washington, CA</option>
-                <option value="1">Washington, CT</option>
-                <option value="2">Washington, GA</option>
-                <option value="3">Washington, IA</option>
-                <option value="4">Washington, IL</option>
-                <option value="5">Washington, IN</option>
-                <option value="6">Washington, KS</option>
-                <option value="7">Washington, CA</option>
-                <option value="8">Washington, CT</option>
-                <option value="9">Washington, GA</option>
-                <option value="10">Washington, IA</option>
-                <option value="11">Washington, IL</option>
-                <option value="12">Washington, IN</option>
-                <option value="13">Washington, KS</option>
-                <option value="14">Washington, CA</option>
-                <option value="15">Washington, CT</option>
-                <option value="16">Washington, GA</option>
-                <option value="17">Washington, IA</option>
-                <option value="18">Washington, IL</option>
-                <option value="19">Washington, IN</option>
-                <option value="20">Washington, KS</option>
-              </select>
-            </div>
-            <button class="fa-solid fa-magnifying-glass"></button>
-          </form>
+          <div class="section-search">
+            <form class="form-inline form-search-navbar dropdown">
+              <input class="form-control dropdown-toggle" data-toggle="dropdown" type="text" placeholder="Search for your Community">
+              <button class="fa-solid fa-magnifying-glass"></button>
+              <div class="dropdown-menu search-dropdown w-100">
+                <div class="p-3">
+                  <div class="search-inside">
+                    <div class="news-box">
+                      <div class="news">Communities</div>
+                      <div class="news">
+                        <a href="#!">Washington, CA</a>
+                      </div>
+                      <div class="news">
+                        <a href="#!">Washington, CT</a>
+                      </div>
+                      <div class="news">
+                        <a href="#!">Washington, GA</a>
+                      </div>
+                      <div class="news">
+                        <a href="#!">Washington, IA</a>
+                      </div>
+                      <div class="news">
+                        <a href="#!">Washington, IL</a>
+                      </div>
+                      <div class="news">
+                        <a href="#!">Washington, IN</a>
+                      </div>
+                      <div class="news">
+                        <a href="#!">Washington, KS</a>
+                      </div>
+                      <div class="news">
+                        <a href="#!">Washington, CA</a>
+                      </div>
+                      <div class="news">
+                        <a href="#!">Washington, CT</a>
+                      </div>
+                      <div class="news">
+                        <a href="#!">Washington, GA</a>
+                      </div>
+                      <div class="news">
+                        <a href="#!">Washington, IA</a>
+                      </div>
+                      <div class="news">
+                        <a href="#!">Washington, IL</a>
+                      </div>
+                      <div class="news">
+                        <a href="#!">Washington, IN</a>
+                      </div>
+                      <div class="news">
+                        <a href="#!">Washington, KS</a>
+                      </div>
+                      <div class="news">
+                        <a href="#!">Washington, CA</a>
+                      </div>
+                      <div class="news">
+                        <a href="#!">Washington, CT</a>
+                      </div>
+                      <div class="news">
+                        <a href="#!">Washington, GA</a>
+                      </div>
+                      <div class="news">
+                        <a href="#!">Washington, IA</a>
+                      </div>
+                      <div class="news">
+                        <a href="#!">Washington, IL</a>
+                      </div>
+                      <div class="news">
+                        <a href="#!">Washington, IN</a>
+                      </div>
+                      <div class="news">
+                        <a href="#!">Washington, KS</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
         <div class="col-auto d-none d-lg-block mb-3 mb-xl-0 lh-12">
           <div class="w-300">
@@ -541,337 +589,339 @@
     <div class="container"> 
       <div class="row justify-content-center">
         <div class="col-xl-auto">
-          <div class="w-300 scroll-content scroll-content-2"> 
-            <div class="row">
-              <div class="col-md-6 col-xl-12">
-                <div class="dropdown dropdown-county show mb-4 d-none d-xl-block">
-                  <a href="#!" class="nearby-3 dropdown-toggle drop-select" data-toggle="dropdown">
-                    <div class="font-weight-bold">Wilmette, IL</div>
-                    <div class="fz-15">Cook County</div>
-                    <i class="fas fa-chevron-right"></i>
-                  </a>
-                  <div class="dropdown-menu">
-                    <div class="row align-items-center mb-2">
-                      <div class="col">
-                        <h2 class="mb-0">Wilmette, IL</h2>
-                      </div>
-                      <div class="col-auto">
-                        <a href="#!" class="dropdown-close">
-                          <img src="img/cross.png" alt="" width="16">
-                        </a>
-                      </div>
-                    </div>                    
-                    <div class="section-map-hide">
-                      <div class="box-search">
-                        <div class="font-weight-bold">State</div>   
-                        <div class="form-map-select">
-                          <a href="#!" class="cross-red"></a>
-                          <div class="select-box">
-                            <select class="select2">
-                              <option value="" hidden>Search or Select a State</option>
-                              <option value="0">Alaska</option>
-                              <option value="1">Alabama</option>
-                              <option value="2">Arkansas</option>
-                              <option value="3">Arizona</option>
-                              <option value="4">California</option>
-                              <option value="5">Colorado</option>
-                              <option value="6">Connecticut</option>
-                              <option value="7">Delaware</option>
-                              <option value="8">Florida</option>
-                              <option value="9">Georgia</option>
-                              <option value="10">Hawaii</option>
-                              <option value="11">Iowa</option>
-                              <option value="12">Idaho</option>
-                              <option value="13">Illinois</option>
-                              <option value="14">Indiana</option>
-                              <option value="15">Kansas</option>
-                              <option value="16">Kentucky</option>
-                              <option value="17">Louisiana</option>
-                              <option value="18">Massachusetts</option>
-                              <option value="19">Maryland</option>
-                              <option value="20">Maine</option>
-                              <option value="21">Michigan</option>
-                              <option value="22">Minnesota</option>
-                              <option value="23">Missouri</option>
-                              <option value="24">Mississippi</option>
-                              <option value="25">Montana</option>
-                              <option value="26">North Carolina</option>
-                              <option value="27">North Dakota</option>
-                              <option value="28">Nebraska</option>
-                              <option value="29">New Hampshire</option>
-                              <option value="30">New Jersey</option>
-                              <option value="31">New Mexico</option>
-                              <option value="32">Nevada</option>
-                              <option value="33">New York</option>
-                              <option value="34">Ohio</option>
-                              <option value="35">Oklahoma</option>
-                              <option value="36">Oregon</option>
-                              <option value="37">Pennsylvania</option>
-                              <option value="38">Rhode Island</option>
-                              <option value="39">South Carolina</option>
-                              <option value="40">South Dakota</option>
-                              <option value="41">Tennessee</option>
-                              <option value="42">Texas</option>
-                              <option value="43">Utah</option>
-                              <option value="44">Virginia</option>
-                              <option value="45">Vermout</option>
-                              <option value="46">Washington</option>
-                              <option value="47">Washington DC</option>
-                              <option value="48">Wisconsin</option>
-                              <option value="49">West Virginia</option>
-                              <option value="50">Wyoming</option>
-                            </select>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="box-search">
-                        <div class="font-weight-bold">County</div>
-                        <div class="form-map-select">
-                          <a href="#!" class="cross-red"></a>
-                          <div class="select-box">
-                            <select class="select2">
-                              <option value="" hidden>Search for a County</option>
-                              <option value="0">DuPage</option>
-                              <option value="1">The Loop</option>
-                              <option value="2">Texas Realty</option>
-                              <option value="3">Mount Vernon</option>
-                              <option value="4">Pipeline</option>
-                              <option value="5">Record</option>
-                              <option value="6">Cook</option>
-                            </select>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="box-search">
-                        <div class="font-weight-bold">City/Community</div>
-                        <div class="form-map-select">
-                          <a href="#!" class="cross-red"></a>
-                          <div class="select-box">
-                            <select class="select2">
-                              <option value="" hidden>Search for a Community</option>
-                              <option value="0">Alsip</option>
-                              <option value="1">Arlington Heights</option>
-                              <option value="2">Bellwood</option>
-                              <option value="3">Berkeley</option>
-                              <option value="4">Berwyn</option>
-                              <option value="5">Blue Island</option>
-                              <option value="6">Bridgeview</option>
-                              <option value="7">Broadview</option>
-                              <option value="8">Brookfield</option>
-                              <option value="9">Burbank</option>
-                              <option value="10">Calumet City</option>
-                              <option value="11">Chicago</option>
-                              <option value="12">Chicago Heights</option>
-                              <option value="13">Chicago Ridge</option>
-                              <option value="14">Cicero</option>
-                              <option value="15">Country Club Hills</option>
-                              <option value="16">Des Plaines</option>
-                              <option value="17">Dolton</option>
-                              <option value="18">Elk Grove Village</option>
-                              <option value="19">Elmwood Park</option>
-                              <option value="20">Evanston</option>
-                              <option value="21">Evergreen Park</option>
-                              <option value="22">Flossmoor</option>
-                              <option value="23">Forest Park</option>
-                              <option value="24">Franklin Park</option>
-                              <option value="25">Glencoe</option>
-                              <option value="26">Glenview</option>
-                              <option value="27">Glenwood</option>
-                              <option value="28">Golf</option>
-                              <option value="29">Hanover Park</option>
-                              <option value="30">Harvey</option>
-                              <option value="31">Harwood Heights</option>
-                              <option value="32">Hazel Crest</option>
-                              <option value="33">Hickory Hills</option>
-                              <option value="34">Hillside</option>
-                              <option value="35">Hines</option>
-                              <option value="36">Hoffman Estates</option>
-                              <option value="37">Hometown</option>
-                              <option value="38">Homewood</option>
-                              <option value="39">Justice</option>
-                              <option value="40">Kenilworth</option>
-                              <option value="41">La Grange</option>
-                              <option value="42">La Grange Park</option>
-                              <option value="43">Lansing</option>
-                              <option value="44">Lemont</option>
-                              <option value="45">Lincolnwood</option>
-                              <option value="46">Lyons</option>
-                              <option value="47">Markham</option>
-                              <option value="48">Matteson</option>
-                              <option value="49">Maywood</option>
-                              <option value="50">Melrose Park</option>
-                              <option value="51">Midlothian</option>
-                              <option value="52">Morton Grove</option>
-                              <option value="53">Mount Prospect</option>
-                              <option value="54">Niles</option>
-                              <option value="55">Northbrook</option>
-                              <option value="56">Oak Forest</option>
-                              <option value="57">Oak Lawn</option>
-                              <option value="58">Oak Park</option>
-                              <option value="59">Olympia Fields</option>
-                              <option value="60">Orland Park</option>
-                              <option value="61">Palatine</option>
-                              <option value="62">Palos Heights</option>
-                              <option value="63">Palos Hills</option>
-                              <option value="64">Palos Park</option>
-                              <option value="65">Park Forest</option>
-                              <option value="66">Park Ridge</option>
-                              <option value="67">Posen</option>
-                              <option value="68">Prospect Heights</option>
-                              <option value="69">Richton Park</option>
-                              <option value="70">River Forest</option>
-                              <option value="71">River Grove</option>
-                              <option value="72">Riverdale</option>
-                              <option value="73">Riverside</option>
-                              <option value="74">Robbins</option>
-                              <option value="75">Rolling Meadows</option>
-                              <option value="76">Schaumburg</option>
-                              <option value="77">Schiller Park</option>
-                              <option value="78">Skokie</option>
-                              <option value="79">South Holland</option>
-                              <option value="80">Steger</option>
-                              <option value="81">Stone Park</option>
-                              <option value="82">Streamwood</option>
-                              <option value="83">Summit Argo</option>
-                              <option value="84">Techny</option>
-                              <option value="85">Thornton</option>
-                              <option value="86">Tinley Park</option>
-                              <option value="87">Westchester</option>
-                              <option value="88">Western Springs</option>
-                              <option value="89">Wheeling</option>
-                              <option value="90">Willow Springs</option>
-                              <option value="91">Wilmette</option>
-                              <option value="92">Winnetka</option>
-                              <option value="93">Worth</option>
-                            </select>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <a href="#!" class="btn btn-block btn-map mt-4">Go</a>
-                  </div>
-                </div>
-                <div class="cart-map mb-4 d-none">
-                  <div class="heatmap" id="map-canvas">
-                    <canvas class="heatmap-canvas"></canvas>
-                  </div>
-                  <a href="#!" class="btn btn-map btn-browse">Browse by Map</a> 
-                </div>
-                <div class="menu-aside menu-allnews" id="menu-aside-allnews">
-                  <div class="aside-top">
-                    <div class="container">
-                      <div class="row align-items-center">
-                        <div class="col fz-0">
-                          <a class="navbar-brand" href="#!">
-                            <img src="img/brand.png" alt="">
-                          </a>
-                        </div>
+          <div class="scroll-content scroll-content-2">
+            <div class="w-300 py-xl-4"> 
+              <div class="row">
+                <div class="col-md-6 col-xl-12">
+                  <div class="dropdown dropdown-county show mb-4 d-none d-xl-block">
+                    <a href="#!" class="nearby-3 dropdown-toggle drop-select" data-toggle="dropdown">
+                      <div class="font-weight-bold">Wilmette, IL</div>
+                      <div class="fz-15">Cook County</div>
+                      <i class="fas fa-chevron-right"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                      <div class="row align-items-center mb-2">
                         <div class="col">
-                          <div class="aside-title">All News</div>
+                          <h2 class="mb-0">Wilmette, IL</h2>
                         </div>
-                        <div class="col text-right">
-                          <a href="#!" class="aside-allnews-close">
-                            <img src="img/cross-red.png" alt="">
+                        <div class="col-auto">
+                          <a href="#!" class="dropdown-close">
+                            <img src="img/cross.png" alt="" width="16">
                           </a>
                         </div>
+                      </div>                    
+                      <div class="section-map-hide">
+                        <div class="box-search">
+                          <div class="font-weight-bold">State</div>   
+                          <div class="form-map-select">
+                            <a href="#!" class="cross-red"></a>
+                            <div class="select-box">
+                              <select class="select2">
+                                <option value="" hidden>Search or Select a State</option>
+                                <option value="0">Alaska</option>
+                                <option value="1">Alabama</option>
+                                <option value="2">Arkansas</option>
+                                <option value="3">Arizona</option>
+                                <option value="4">California</option>
+                                <option value="5">Colorado</option>
+                                <option value="6">Connecticut</option>
+                                <option value="7">Delaware</option>
+                                <option value="8">Florida</option>
+                                <option value="9">Georgia</option>
+                                <option value="10">Hawaii</option>
+                                <option value="11">Iowa</option>
+                                <option value="12">Idaho</option>
+                                <option value="13">Illinois</option>
+                                <option value="14">Indiana</option>
+                                <option value="15">Kansas</option>
+                                <option value="16">Kentucky</option>
+                                <option value="17">Louisiana</option>
+                                <option value="18">Massachusetts</option>
+                                <option value="19">Maryland</option>
+                                <option value="20">Maine</option>
+                                <option value="21">Michigan</option>
+                                <option value="22">Minnesota</option>
+                                <option value="23">Missouri</option>
+                                <option value="24">Mississippi</option>
+                                <option value="25">Montana</option>
+                                <option value="26">North Carolina</option>
+                                <option value="27">North Dakota</option>
+                                <option value="28">Nebraska</option>
+                                <option value="29">New Hampshire</option>
+                                <option value="30">New Jersey</option>
+                                <option value="31">New Mexico</option>
+                                <option value="32">Nevada</option>
+                                <option value="33">New York</option>
+                                <option value="34">Ohio</option>
+                                <option value="35">Oklahoma</option>
+                                <option value="36">Oregon</option>
+                                <option value="37">Pennsylvania</option>
+                                <option value="38">Rhode Island</option>
+                                <option value="39">South Carolina</option>
+                                <option value="40">South Dakota</option>
+                                <option value="41">Tennessee</option>
+                                <option value="42">Texas</option>
+                                <option value="43">Utah</option>
+                                <option value="44">Virginia</option>
+                                <option value="45">Vermout</option>
+                                <option value="46">Washington</option>
+                                <option value="47">Washington DC</option>
+                                <option value="48">Wisconsin</option>
+                                <option value="49">West Virginia</option>
+                                <option value="50">Wyoming</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="box-search">
+                          <div class="font-weight-bold">County</div>
+                          <div class="form-map-select">
+                            <a href="#!" class="cross-red"></a>
+                            <div class="select-box">
+                              <select class="select2">
+                                <option value="" hidden>Search for a County</option>
+                                <option value="0">DuPage</option>
+                                <option value="1">The Loop</option>
+                                <option value="2">Texas Realty</option>
+                                <option value="3">Mount Vernon</option>
+                                <option value="4">Pipeline</option>
+                                <option value="5">Record</option>
+                                <option value="6">Cook</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="box-search">
+                          <div class="font-weight-bold">City/Community</div>
+                          <div class="form-map-select">
+                            <a href="#!" class="cross-red"></a>
+                            <div class="select-box">
+                              <select class="select2">
+                                <option value="" hidden>Search for a Community</option>
+                                <option value="0">Alsip</option>
+                                <option value="1">Arlington Heights</option>
+                                <option value="2">Bellwood</option>
+                                <option value="3">Berkeley</option>
+                                <option value="4">Berwyn</option>
+                                <option value="5">Blue Island</option>
+                                <option value="6">Bridgeview</option>
+                                <option value="7">Broadview</option>
+                                <option value="8">Brookfield</option>
+                                <option value="9">Burbank</option>
+                                <option value="10">Calumet City</option>
+                                <option value="11">Chicago</option>
+                                <option value="12">Chicago Heights</option>
+                                <option value="13">Chicago Ridge</option>
+                                <option value="14">Cicero</option>
+                                <option value="15">Country Club Hills</option>
+                                <option value="16">Des Plaines</option>
+                                <option value="17">Dolton</option>
+                                <option value="18">Elk Grove Village</option>
+                                <option value="19">Elmwood Park</option>
+                                <option value="20">Evanston</option>
+                                <option value="21">Evergreen Park</option>
+                                <option value="22">Flossmoor</option>
+                                <option value="23">Forest Park</option>
+                                <option value="24">Franklin Park</option>
+                                <option value="25">Glencoe</option>
+                                <option value="26">Glenview</option>
+                                <option value="27">Glenwood</option>
+                                <option value="28">Golf</option>
+                                <option value="29">Hanover Park</option>
+                                <option value="30">Harvey</option>
+                                <option value="31">Harwood Heights</option>
+                                <option value="32">Hazel Crest</option>
+                                <option value="33">Hickory Hills</option>
+                                <option value="34">Hillside</option>
+                                <option value="35">Hines</option>
+                                <option value="36">Hoffman Estates</option>
+                                <option value="37">Hometown</option>
+                                <option value="38">Homewood</option>
+                                <option value="39">Justice</option>
+                                <option value="40">Kenilworth</option>
+                                <option value="41">La Grange</option>
+                                <option value="42">La Grange Park</option>
+                                <option value="43">Lansing</option>
+                                <option value="44">Lemont</option>
+                                <option value="45">Lincolnwood</option>
+                                <option value="46">Lyons</option>
+                                <option value="47">Markham</option>
+                                <option value="48">Matteson</option>
+                                <option value="49">Maywood</option>
+                                <option value="50">Melrose Park</option>
+                                <option value="51">Midlothian</option>
+                                <option value="52">Morton Grove</option>
+                                <option value="53">Mount Prospect</option>
+                                <option value="54">Niles</option>
+                                <option value="55">Northbrook</option>
+                                <option value="56">Oak Forest</option>
+                                <option value="57">Oak Lawn</option>
+                                <option value="58">Oak Park</option>
+                                <option value="59">Olympia Fields</option>
+                                <option value="60">Orland Park</option>
+                                <option value="61">Palatine</option>
+                                <option value="62">Palos Heights</option>
+                                <option value="63">Palos Hills</option>
+                                <option value="64">Palos Park</option>
+                                <option value="65">Park Forest</option>
+                                <option value="66">Park Ridge</option>
+                                <option value="67">Posen</option>
+                                <option value="68">Prospect Heights</option>
+                                <option value="69">Richton Park</option>
+                                <option value="70">River Forest</option>
+                                <option value="71">River Grove</option>
+                                <option value="72">Riverdale</option>
+                                <option value="73">Riverside</option>
+                                <option value="74">Robbins</option>
+                                <option value="75">Rolling Meadows</option>
+                                <option value="76">Schaumburg</option>
+                                <option value="77">Schiller Park</option>
+                                <option value="78">Skokie</option>
+                                <option value="79">South Holland</option>
+                                <option value="80">Steger</option>
+                                <option value="81">Stone Park</option>
+                                <option value="82">Streamwood</option>
+                                <option value="83">Summit Argo</option>
+                                <option value="84">Techny</option>
+                                <option value="85">Thornton</option>
+                                <option value="86">Tinley Park</option>
+                                <option value="87">Westchester</option>
+                                <option value="88">Western Springs</option>
+                                <option value="89">Wheeling</option>
+                                <option value="90">Willow Springs</option>
+                                <option value="91">Wilmette</option>
+                                <option value="92">Winnetka</option>
+                                <option value="93">Worth</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
                       </div>
+                      <a href="#!" class="btn btn-block btn-map mt-4">Go</a>
                     </div>
                   </div>
-                  <div class="aside-bottom py-3">
-                    <div class="category category-new active">
-                      <div class="row row-8 align-items-center">
-                        <div class="col-auto">
-                          <div class="img-box img-box-all bg-img" style="background-image: url(img/all_bw.png)"></div>
+                  <div class="cart-map mb-4 d-none">
+                    <div class="heatmap" id="map-canvas">
+                      <canvas class="heatmap-canvas"></canvas>
+                    </div>
+                    <a href="#!" class="btn btn-map btn-browse">Browse by Map</a> 
+                  </div>
+                  <div class="menu-aside menu-allnews" id="menu-aside-allnews">
+                    <div class="aside-top">
+                      <div class="container">
+                        <div class="row align-items-center">
+                          <div class="col fz-0">
+                            <a class="navbar-brand" href="#!">
+                              <img src="img/brand.png" alt="">
+                            </a>
+                          </div>
+                          <div class="col">
+                            <div class="aside-title">All News</div>
+                          </div>
+                          <div class="col text-right">
+                            <a href="#!" class="aside-allnews-close">
+                              <img src="img/cross-red.png" alt="">
+                            </a>
+                          </div>
                         </div>
-                        <div class="col">All News</div> 
                       </div>
                     </div>
-                    <div class="category category-new">
-                      <div class="row row-8 align-items-center">
-                        <div class="col-auto">
-                          <div class="img-box img-box-town bg-img" style="background-image: url(img/town_feed_bw.png)"></div>
+                    <div class="aside-bottom py-3">
+                      <div class="category category-new active">
+                        <div class="row row-8 align-items-center">
+                          <div class="col-auto">
+                            <div class="img-box img-box-all bg-img" style="background-image: url(img/all_bw.png)"></div>
+                          </div>
+                          <div class="col">All News</div> 
                         </div>
-                        <div class="col">Town Feed</div> 
                       </div>
-                    </div>
-                    <div class="category category-new">
-                      <div class="row row-8 align-items-center">
-                        <div class="col-auto">
-                          <div class="img-box img-box-events bg-img" style="background-image: url(img/events_bw.png)"></div>
+                      <div class="category category-new">
+                        <div class="row row-8 align-items-center">
+                          <div class="col-auto">
+                            <div class="img-box img-box-town bg-img" style="background-image: url(img/town_feed_bw.png)"></div>
+                          </div>
+                          <div class="col">Town Feed</div> 
                         </div>
-                        <div class="col">Events</div> 
                       </div>
-                    </div>
-                    <div class="category category-new">
-                      <div class="row row-8 align-items-center">
-                        <div class="col-auto">
-                          <div class="img-box img-box-local bg-img" style="background-image: url(img/government_bw.png)"></div>
+                      <div class="category category-new">
+                        <div class="row row-8 align-items-center">
+                          <div class="col-auto">
+                            <div class="img-box img-box-events bg-img" style="background-image: url(img/events_bw.png)"></div>
+                          </div>
+                          <div class="col">Events</div> 
                         </div>
-                        <div class="col">Local Government</div> 
                       </div>
-                    </div>
-                    <div class="category category-new">
-                      <div class="row row-8 align-items-center">
-                        <div class="col-auto">
-                          <div class="img-box img-box-business bg-img" style="background-image: url(img/business_bw.png)"></div>
+                      <div class="category category-new">
+                        <div class="row row-8 align-items-center">
+                          <div class="col-auto">
+                            <div class="img-box img-box-local bg-img" style="background-image: url(img/government_bw.png)"></div>
+                          </div>
+                          <div class="col">Local Government</div> 
                         </div>
-                        <div class="col">Business</div> 
                       </div>
-                    </div>
-                    <div class="category category-new">
-                      <div class="row row-8 align-items-center">
-                        <div class="col-auto">
-                          <div class="img-box img-box-crime bg-img" style="background-image: url(img/crime_bw.png)"></div>
+                      <div class="category category-new">
+                        <div class="row row-8 align-items-center">
+                          <div class="col-auto">
+                            <div class="img-box img-box-business bg-img" style="background-image: url(img/business_bw.png)"></div>
+                          </div>
+                          <div class="col">Business</div> 
                         </div>
-                        <div class="col">Crime</div> 
                       </div>
-                    </div>
-                    <div class="category category-new">
-                      <div class="row row-8 align-items-center">
-                        <div class="col-auto">
-                          <div class="img-box img-box-camp bg-img" style="background-image: url(img/camp_elections_bw.png)"></div>
+                      <div class="category category-new">
+                        <div class="row row-8 align-items-center">
+                          <div class="col-auto">
+                            <div class="img-box img-box-crime bg-img" style="background-image: url(img/crime_bw.png)"></div>
+                          </div>
+                          <div class="col">Crime</div> 
                         </div>
-                        <div class="col">Campaigns & Elections</div> 
                       </div>
-                    </div>
-                    <div class="category category-new">
-                      <div class="row row-8 align-items-center">
-                        <div class="col-auto">
-                          <div class="img-box img-box-milestones bg-img" style="background-image: url(img/milestones_bw.png)"></div>
+                      <div class="category category-new">
+                        <div class="row row-8 align-items-center">
+                          <div class="col-auto">
+                            <div class="img-box img-box-camp bg-img" style="background-image: url(img/camp_elections_bw.png)"></div>
+                          </div>
+                          <div class="col">Campaigns & Elections</div> 
                         </div>
-                        <div class="col">Milestones</div> 
                       </div>
-                    </div>
-                    <div class="category category-new">
-                      <div class="row row-8 align-items-center">
-                        <div class="col-auto">
-                          <div class="img-box img-box-religion bg-img" style="background-image: url(img/religion_bw.png)"></div>
+                      <div class="category category-new">
+                        <div class="row row-8 align-items-center">
+                          <div class="col-auto">
+                            <div class="img-box img-box-milestones bg-img" style="background-image: url(img/milestones_bw.png)"></div>
+                          </div>
+                          <div class="col">Milestones</div> 
                         </div>
-                        <div class="col">Religion</div> 
                       </div>
-                    </div>
-                    <div class="category category-new">
-                      <div class="row row-8 align-items-center">
-                        <div class="col-auto">
-                          <div class="img-box img-box-sports bg-img" style="background-image: url(img/prep_sports_bw.png)"></div>
+                      <div class="category category-new">
+                        <div class="row row-8 align-items-center">
+                          <div class="col-auto">
+                            <div class="img-box img-box-religion bg-img" style="background-image: url(img/religion_bw.png)"></div>
+                          </div>
+                          <div class="col">Religion</div> 
                         </div>
-                        <div class="col">Prep Sports</div> 
                       </div>
-                    </div>
-                    <div class="category category-new">
-                      <div class="row row-8 align-items-center">
-                        <div class="col-auto">
-                          <div class="img-box img-box-youth bg-img" style="background-image: url(img/youth_sports_bw.png)"></div>
+                      <div class="category category-new">
+                        <div class="row row-8 align-items-center">
+                          <div class="col-auto">
+                            <div class="img-box img-box-sports bg-img" style="background-image: url(img/prep_sports_bw.png)"></div>
+                          </div>
+                          <div class="col">Prep Sports</div> 
                         </div>
-                        <div class="col">Youth Sports</div> 
                       </div>
-                    </div>
-                    <div class="category category-new">
-                      <div class="row row-8 align-items-center">
-                        <div class="col-auto">
-                          <div class="img-box img-box-school bg-img" style="background-image: url(img/school_bw.png)"></div>
+                      <div class="category category-new">
+                        <div class="row row-8 align-items-center">
+                          <div class="col-auto">
+                            <div class="img-box img-box-youth bg-img" style="background-image: url(img/youth_sports_bw.png)"></div>
+                          </div>
+                          <div class="col">Youth Sports</div> 
                         </div>
-                        <div class="col">K-12 Schools</div> 
+                      </div>
+                      <div class="category category-new">
+                        <div class="row row-8 align-items-center">
+                          <div class="col-auto">
+                            <div class="img-box img-box-school bg-img" style="background-image: url(img/school_bw.png)"></div>
+                          </div>
+                          <div class="col">K-12 Schools</div> 
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -880,9 +930,9 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-8 col-xl mb-4 mb-lg-0">
+        <div class="col-lg-8 col-xl">
           <div class="scroll-content">
-            <div class="section-community mb-4">
+            <div class="section-community py-4">
               <div class="community-box">
                 <div class="text-box-inside">
                   <h5 class="mb-3">Trending in Wilmette, IL</h5>
@@ -1183,7 +1233,7 @@
                 </div>
                 <div class="text-box text-box-2">
                   <div class="text-box-inside">
-                    <div class="content-box-2 mb-4">
+                    <div class="content-box-2">
                       <div class="h5 mb-3">
                         <div class="row align-items-center mb-3">
                           <div class="col">
@@ -1266,7 +1316,7 @@
                 </div>
                 <div class="text-box text-box-2">
                   <div class="text-box-inside">
-                    <div class="content-box-2 mb-4">
+                    <div class="content-box-2">
                       <div class="h5 mb-3">
                         <div class="row align-items-center mb-2">
                           <div class="col">
@@ -1345,20 +1395,22 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-8 col-lg-4 col-xl-auto mb-4 mb-lg-0">
-          <div class="w-300 scroll-content">
-            <div class="text-center mb-4">
-              <a href="#!"><img src="img/medical-group.jpg" alt=""></a>
-            </div>
-            <div class="content-box newsletter mb-4">
-              <div class="h5">Local Newsletter</div>
-              <div class="box-bottom">
-                <p class="fz-13 my-2 lh-12">Stay in touch with your community. Recieve weekly emails about news in your community.</p>
-                <form class="form-inline form-subscribe my-3">
-                  <input class="form-control w-100 mb-3 text-center" type="email" placeholder="Email Address">
-                  <button class="btn btn-subscribe btn-block">Subscribe</button>  
-                </form>
-                <div class="fz-9 text-center">By signing up you agree to receive email newsletters or alerts from Prep Sports Wire. You can unsubscribe at any time. We will never sell, distribute, or otherwise provide your email to a third party.</div>
+        <div class="col-sm-8 col-lg-4 col-xl-auto">
+          <div class="scroll-content">
+            <div class="w-300 py-4">
+              <div class="text-center mb-4">
+                <a href="#!"><img src="img/medical-group.jpg" alt=""></a>
+              </div>
+              <div class="content-box newsletter mb-4">
+                <div class="h5">Local Newsletter</div>
+                <div class="box-bottom">
+                  <p class="fz-13 my-2 lh-12">Stay in touch with your community. Recieve weekly emails about news in your community.</p>
+                  <form class="form-inline form-subscribe my-3">
+                    <input class="form-control w-100 mb-3 text-center" type="email" placeholder="Email Address">
+                    <button class="btn btn-subscribe btn-block">Subscribe</button>  
+                  </form>
+                  <div class="fz-9 text-center">By signing up you agree to receive email newsletters or alerts from Prep Sports Wire. You can unsubscribe at any time. We will never sell, distribute, or otherwise provide your email to a third party.</div>
+                </div>
               </div>
             </div>
           </div>
@@ -1573,8 +1625,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-  <script src="https://cdn.tutorialjinni.com/selectize.js/0.12.6/js/standalone/selectize.min.js"></script>
-  <script src="https://cdn.tutorialjinni.com/selectize.js/0.12.6/js/selectize.min.js"></script>
   <script src="https://jvectormap.com/js/jquery-jvectormap-2.0.5.min.js"></script>
   <script src="https://jvectormap.com/js/jquery-jvectormap-us-lcc.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js"></script>

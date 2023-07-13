@@ -61,8 +61,6 @@ $(document).on('click.bs.dropdown.data-api', '.dropdown-menu', function (e) {
 
 // SELECT
 
-  $('.select-beast').selectize({});
-
   $("select.select2").select2();
   $("select.search-hide").select2({
     minimumResultsForSearch: Infinity
