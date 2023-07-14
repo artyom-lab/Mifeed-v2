@@ -504,7 +504,7 @@ a {
   font-weight: bold;
   padding: 6px 28px 6px 20px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-  background: #FFF url(../img/arrow-select.png) no-repeat right 0.75rem center/12px 8px; }
+  background: #FFF url(../img/arrow-select.webp) no-repeat right 0.75rem center/12px 8px; }
   @media (max-width: 991.98px) {
     .select-state {
       min-width: auto;
@@ -702,29 +702,29 @@ a {
     height: 25px;
     width: 25px; }
   .category-new:hover .img-box.img-box-all, .category-new.active .img-box.img-box-all {
-    background-image: url(../img/all.png) !important; }
+    background-image: url(../img/all.webp) !important; }
   .category-new:hover .img-box.img-box-town, .category-new.active .img-box.img-box-town {
-    background-image: url(../img/town_feed.png) !important; }
+    background-image: url(../img/town_feed.webp) !important; }
   .category-new:hover .img-box.img-box-events, .category-new.active .img-box.img-box-events {
-    background-image: url(../img/events.png) !important; }
+    background-image: url(../img/events.webp) !important; }
   .category-new:hover .img-box.img-box-local, .category-new.active .img-box.img-box-local {
-    background-image: url(../img/government.png) !important; }
+    background-image: url(../img/government.webp) !important; }
   .category-new:hover .img-box.img-box-business, .category-new.active .img-box.img-box-business {
-    background-image: url(../img/business.png) !important; }
+    background-image: url(../img/business.webp) !important; }
   .category-new:hover .img-box.img-box-crime, .category-new.active .img-box.img-box-crime {
-    background-image: url(../img/crime.png) !important; }
+    background-image: url(../img/crime.webp) !important; }
   .category-new:hover .img-box.img-box-camp, .category-new.active .img-box.img-box-camp {
-    background-image: url(../img/camp_elections.png) !important; }
+    background-image: url(../img/camp_elections.webp) !important; }
   .category-new:hover .img-box.img-box-milestones, .category-new.active .img-box.img-box-milestones {
-    background-image: url(../img/milestones.png) !important; }
+    background-image: url(../img/milestones.webp) !important; }
   .category-new:hover .img-box.img-box-religion, .category-new.active .img-box.img-box-religion {
-    background-image: url(../img/religion.png) !important; }
+    background-image: url(../img/religion.webp) !important; }
   .category-new:hover .img-box.img-box-sports, .category-new.active .img-box.img-box-sports {
-    background-image: url(../img/prep_sports.png) !important; }
+    background-image: url(../img/prep_sports.webp) !important; }
   .category-new:hover .img-box.img-box-youth, .category-new.active .img-box.img-box-youth {
-    background-image: url(../img/youth_sports.png) !important; }
+    background-image: url(../img/youth_sports.webp) !important; }
   .category-new:hover .img-box.img-box-school, .category-new.active .img-box.img-box-school {
-    background-image: url(../img/school.png) !important; }
+    background-image: url(../img/school.webp) !important; }
   @media (max-width: 1199.98px) {
     .category-new:hover, .category-new.active {
       background: #f0f2f5;
@@ -777,7 +777,7 @@ a {
     color: #c0c0c0; }
 
 .section-hp {
-  background-image: url(../img/hp.jpg);
+  background-image: url(../img/hp.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
@@ -1050,7 +1050,7 @@ a {
     display: inline-block;
     border-radius: 100px;
     pointer-events: none;
-    background-image: url(../img/cross-red.png);
+    background-image: url(../img/cross-red.webp);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 15px 15px; }
