@@ -108,10 +108,6 @@ a
 	font-size: 0
 .fz-9
 	font-size: 9px
-.fz-11
-	font-size: 11px
-.fz-12
-	font-size: 12px
 .fz-13
 	font-size: 13px
 .fz-14
@@ -123,8 +119,6 @@ a
 
 .lh-12
 	line-height: 1.2
-.lh-1
-	line-height: 1
 
 .h1, h1, .h2, h2, .h3, h3, .h4, h4, .h5, h5, .h6, h6
 	a 
@@ -331,6 +325,15 @@ a
 			padding-left: 16px
 			padding-right: 16px
 
+.text-box-2
+	padding: 24px 0 32px
+	.text-box-inside
+		@media (max-width: 991.98px)
+			padding-left: 0
+			padding-right: 0
+	&:first-child
+		padding: 0 0 32px
+
 .blue-link
 	color: $color-blue !important
 	font-size: 14px
@@ -504,7 +507,6 @@ a
 	font-size: 16px
 	border: 0	
 	cursor: pointer
-	min-width: 300px
 	border-radius: 8px
 	color: $color-input
 	height: 44px
@@ -512,16 +514,10 @@ a
 	padding: 6px 28px 6px 20px
 	box-shadow: 0 1px 2px rgba(0, 0, 0, .15)
 	background: $color-white url(../img/arrow-select.webp) no-repeat right 0.75rem center/12px 8px
-	@media (max-width: 991.98px)
-		min-width: auto
-		width: 100%
 	@media (max-width: 575.98px)
 		padding: 6px 28px 6px 10px
 	&:focus 
 		box-shadow: 0 1px 2px rgba(0, 0, 0, .15)
-	&.select-gray
-		min-width: auto
-		width: 100%
 
 .btn-locations
 	position: relative
@@ -732,15 +728,6 @@ a
 			background: $color-gray
 			box-shadow: 0 1px 2px rgba(0, 0, 0, .15)
 
-.text-box-2
-	padding: 24px 0 32px
-	.text-box-inside
-		@media (max-width: 991.98px)
-			padding-left: 0
-			padding-right: 0
-	&:first-child
-		padding: 0 0 32px
-
 .calendar-black
 	text-align: center
 	font-weight: bold
@@ -900,26 +887,6 @@ a
 
 // VERSION-2
 
-.cook-county-link
-	font-size: 14px
-	position: relative
-	background: $color-gray
-	border-radius: 5px
-	width: 113px
-	display: inline-block
-	color: $color-black
-	box-shadow: 0 1px 2px rgba(0, 0, 0, .15)
-	padding: 4px 10px
-	.fa-chevron-right
-		position: absolute
-		right: 8px
-		top: 50%
-		transition: $transition
-		font-size: 12px
-		transform: translateY(-50%)
-	&:hover
-		color: $color-black
-
 .dropdown-county
 	.dropdown-toggle
 		&:after 
@@ -1070,6 +1037,8 @@ a
 			&:hover 
 				opacity: .8 
 
+// SELECT2
+
 .select2-container
 	display: block
 	width: auto !important
@@ -1089,15 +1058,12 @@ a
 		display: block
 .select2-container--default .select2-selection--single
 	border-radius: 8px
-	.select2-selection__rendered
+	.select2-selection__rendered, .select2-selection__placeholder
 		color: $color-black
 		line-height: 45px
 		font-size: 14px
 		font-weight: bold
-	.select2-selection__arrow
-		display: none
-.select2-results__options
-	> li:first-child:not([role="alert"])
+	.select2-selection__arrow, .select2-selection__clear
 		display: none
 .select2-container--open 
 	.select2-dropdown
@@ -1140,7 +1106,7 @@ a
 					background-color: transparent
 				.select2-results__option--highlighted.select2-results__option--selectable
 					background: transparent
-					&:hover, &.select2-results__option--selected
+					&:hover, &.select2-results__option--selected, &.select2-results__option--highlighted.select2-results__option--selectable
 						background-color: $color-sidebar
 						border-radius: 5px
 						border: 1px solid $color-selectize

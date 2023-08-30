@@ -61,9 +61,20 @@ $(document).on('click.bs.dropdown.data-api', '.dropdown-menu', function (e) {
 
 // SELECT
 
-  $("select.select2").select2();
+  $("select.select2").select2({
+    allowClear: true
+  });
   $("select.search-hide").select2({
     minimumResultsForSearch: Infinity
+  });
+  $("select.search-state").select2({
+    placeholder: "Search or Select a State"
+  });
+  $("select.search-county").select2({
+    placeholder: "Search for a County"
+  });
+  $("select.search-community").select2({
+    placeholder: "Search for a County"
   });
 
   $('.section-map-hide select').on('change', function () {

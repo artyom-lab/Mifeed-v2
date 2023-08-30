@@ -90,12 +90,6 @@ a {
 .fz-9 {
   font-size: 9px; }
 
-.fz-11 {
-  font-size: 11px; }
-
-.fz-12 {
-  font-size: 12px; }
-
 .fz-13 {
   font-size: 13px; }
 
@@ -110,9 +104,6 @@ a {
 
 .lh-12 {
   line-height: 1.2; }
-
-.lh-1 {
-  line-height: 1; }
 
 .h1 a, h1 a, .h2 a, h2 a, .h3 a, h3 a, .h4 a, h4 a, .h5 a, h5 a, .h6 a, h6 a {
   color: #000; }
@@ -317,6 +308,15 @@ a {
         padding-left: 16px;
         padding-right: 16px; } }
 
+.text-box-2 {
+  padding: 24px 0 32px; }
+  @media (max-width: 991.98px) {
+    .text-box-2 .text-box-inside {
+      padding-left: 0;
+      padding-right: 0; } }
+  .text-box-2:first-child {
+    padding: 0 0 32px; }
+
 .blue-link {
   color: #007bff !important;
   font-size: 14px;
@@ -497,7 +497,6 @@ a {
   font-size: 16px;
   border: 0;
   cursor: pointer;
-  min-width: 300px;
   border-radius: 8px;
   color: #c0c0c0;
   height: 44px;
@@ -505,18 +504,11 @@ a {
   padding: 6px 28px 6px 20px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
   background: #FFF url(../img/arrow-select.webp) no-repeat right 0.75rem center/12px 8px; }
-  @media (max-width: 991.98px) {
-    .select-state {
-      min-width: auto;
-      width: 100%; } }
   @media (max-width: 575.98px) {
     .select-state {
       padding: 6px 28px 6px 10px; } }
   .select-state:focus {
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15); }
-  .select-state.select-gray {
-    min-width: auto;
-    width: 100%; }
 
 .btn-locations {
   position: relative;
@@ -730,15 +722,6 @@ a {
       background: #f0f2f5;
       box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15); } }
 
-.text-box-2 {
-  padding: 24px 0 32px; }
-  @media (max-width: 991.98px) {
-    .text-box-2 .text-box-inside {
-      padding-left: 0;
-      padding-right: 0; } }
-  .text-box-2:first-child {
-    padding: 0 0 32px; }
-
 .calendar-black {
   text-align: center;
   font-weight: bold;
@@ -897,26 +880,6 @@ a {
     flex-grow: 1; }
     .card-trending .card-content .blue-link-big {
       font-size: 15px; }
-
-.cook-county-link {
-  font-size: 14px;
-  position: relative;
-  background: #f0f2f5;
-  border-radius: 5px;
-  width: 113px;
-  display: inline-block;
-  color: #000;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-  padding: 4px 10px; }
-  .cook-county-link .fa-chevron-right {
-    position: absolute;
-    right: 8px;
-    top: 50%;
-    transition: 0.3s;
-    font-size: 12px;
-    transform: translateY(-50%); }
-  .cook-county-link:hover {
-    color: #000; }
 
 .dropdown-county .dropdown-toggle:after {
   display: none; }
@@ -1083,16 +1046,13 @@ a {
 
 .select2-container--default .select2-selection--single {
   border-radius: 8px; }
-  .select2-container--default .select2-selection--single .select2-selection__rendered {
+  .select2-container--default .select2-selection--single .select2-selection__rendered, .select2-container--default .select2-selection--single .select2-selection__placeholder {
     color: #000;
     line-height: 45px;
     font-size: 14px;
     font-weight: bold; }
-  .select2-container--default .select2-selection--single .select2-selection__arrow {
+  .select2-container--default .select2-selection--single .select2-selection__arrow, .select2-container--default .select2-selection--single .select2-selection__clear {
     display: none; }
-
-.select2-results__options > li:first-child:not([role="alert"]) {
-  display: none; }
 
 .select2-container--open .select2-dropdown {
   border: 1px solid #d7d8d9;
@@ -1134,7 +1094,7 @@ a {
         background-color: transparent; }
       .select2-container--open .select2-dropdown .select2-results .select2-results__options .select2-results__option--highlighted.select2-results__option--selectable {
         background: transparent; }
-        .select2-container--open .select2-dropdown .select2-results .select2-results__options .select2-results__option--highlighted.select2-results__option--selectable:hover, .select2-container--open .select2-dropdown .select2-results .select2-results__options .select2-results__option--highlighted.select2-results__option--selectable.select2-results__option--selected {
+        .select2-container--open .select2-dropdown .select2-results .select2-results__options .select2-results__option--highlighted.select2-results__option--selectable:hover, .select2-container--open .select2-dropdown .select2-results .select2-results__options .select2-results__option--highlighted.select2-results__option--selectable.select2-results__option--selected, .select2-container--open .select2-dropdown .select2-results .select2-results__options .select2-results__option--highlighted.select2-results__option--selectable.select2-results__option--highlighted.select2-results__option--selectable {
           background-color: #f9f9f9;
           border-radius: 5px;
           border: 1px solid #d7d8d9;
