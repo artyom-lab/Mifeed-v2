@@ -64,9 +64,6 @@ $(document).on('click.bs.dropdown.data-api', '.dropdown-menu', function (e) {
   $("select.select2").select2({
     allowClear: true
   });
-  $("select.search-hide").select2({
-    minimumResultsForSearch: Infinity
-  });
   $("select.search-state").select2({
     placeholder: "Search or Select a State"
   });
