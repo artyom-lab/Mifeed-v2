@@ -71,7 +71,7 @@ $(document).on('click.bs.dropdown.data-api', '.dropdown-menu', function (e) {
     placeholder: "Search for a County"
   });
   $("select.search-community").select2({
-    placeholder: "Search for a County"
+    placeholder: "Search for a Community"
   });
 
   $('.section-map-hide select').on('change', function () {
